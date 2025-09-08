@@ -2,6 +2,21 @@
 
 {% block title %}{{ content.cases.veredas.title if content.cases else 'Protocolo Veredas - Revolucionando o Tratamento de Parkinson' }} - Galeleo{% endblock %}
 
+{% block head %}
+<!-- SEO tags Plataforma Protocolo Veredas -->
+{% if lang == 'pt' %}
+<meta name="description" content="Plataforma Protocolo Veredas: solução tecnológica revolucionária para tratamento personalizado de Parkinson, combinando inteligência artificial e expertise clínica para melhorar a qualidade de vida dos pacientes.">
+<meta name="keywords" content="Parkinson, tratamento de Parkinson, Plataforma Protocolo Veredas, Galeleo, tecnologia médica, IA em saúde, monitoramento personalizado, inovação médica, assistência neurológica, saúde digital, qualidade de vida, machine learning médico">
+{% elif lang == 'en' %}
+<meta name="description" content="Protocolo Veredas Platform: revolutionary technological solution for personalized Parkinson's treatment, combining artificial intelligence and clinical expertise to improve patients' quality of life.">
+<meta name="keywords" content="Parkinson, Parkinson's treatment, Protocolo Veredas Platform, Galeleo, medical technology, AI in healthcare, personalized monitoring, medical innovation, neurological assistance, digital health, quality of life, medical machine learning">
+{% elif lang == 'es' %}
+<meta name="description" content="Plataforma Protocolo Veredas: solución tecnológica revolucionaria para el tratamiento personalizado del Parkinson, combinando inteligencia artificial y experiencia clínica para mejorar la calidad de vida de los pacientes.">
+<meta name="keywords" content="Parkinson, tratamiento de Parkinson, Plataforma Protocolo Veredas, Galeleo, tecnología médica, IA en salud, monitoreo personalizado, innovación médica, asistencia neurológica, salud digital, calidad de vida, machine learning médico">
+{% endif %}
+<meta name="robots" content="index,follow">
+{% endblock %}
+
 {% block content %}
 <!-- Case Header -->
 <section class="case-header-section">
@@ -62,6 +77,16 @@
                     <p>
                         {{ content.cases.veredas.solution if content.cases else 'Desenvolvemos uma plataforma completa que integra gerenciamento de pacientes, observações automatizadas, visualização de dados, inteligência artificial e comunicação integrada. O sistema permite monitoramento contínuo com insights baseados em IA para apoiar decisões clínicas.' }}
                     </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veredas.mission_title if content.cases else 'Nossa Missão' }}</h3>
+                    <div class="mission-content p-4 bg-light rounded-3">
+                        <p class="lead text-center mb-0">
+                            <em>{{ content.cases.veredas.mission if content.cases else 'Transformar a jornada de tratamento do Parkinson através da tecnologia, proporcionando mais qualidade de vida e esperança para pacientes e suas famílias. Cada linha de código que escrevemos é um passo em direção a um futuro onde o Parkinson não define limites, mas sim possibilidades.' }}</em>
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Features -->
@@ -158,27 +183,13 @@
     </div>
 </section>
 
-<!-- Case CTA -->
-<section class="case-cta-section py-5">
+<!-- Case Footer -->
+<section class="case-footer-section py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                <h2 class="cta-title mb-4">
-                    {{ content.cases.veredas.cta_title if content.cases else 'Interessado em uma Solução Similar?' }}
-                </h2>
-                <p class="cta-subtitle mb-4">
-                    {{ content.cases.veredas.cta_subtitle if content.cases else 'Vamos conversar sobre como podemos desenvolver uma plataforma personalizada para suas necessidades de saúde digital' }}
-                </p>
-                <div class="cta-buttons">
-                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg me-3">
-                        <i class="fas fa-comments me-2"></i>
-                        {{ content.cases.veredas.cta_contact if content.cases else 'Falar com Especialista' }}
-                    </a>
-                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-arrow-left me-2"></i>
-                        {{ content.cases.veredas.cta_back if content.cases else 'Voltar ao Blog' }}
-                    </a>
-                </div>
+                <p class="mb-2">© 2024 Plataforma ProtocoloVeredas. Desenvolvido com dedicação pela Galeleo.</p>
+                <p class="mb-0">Inspirado no trabalho pioneiro do <a href="https://protocoloveredas.com.br" target="_blank" class="text-primary text-decoration-none">Protocolo Veredas</a></p>
             </div>
         </div>
     </div>

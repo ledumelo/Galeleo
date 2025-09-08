@@ -1,0 +1,859 @@
+/* Custom CSS Variables */
+:root {
+    --primary-color: #FF8C00;      /* Orange from logo */
+    --secondary-color: #FFD700;    /* Yellow from logo */
+    --accent-color: #90EE90;       /* Light green from logo */
+    --dark-blue: #1a1f3a;
+    --light-blue: #2c3e50;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-light: #f8f9fa;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --gradient-secondary: linear-gradient(135deg, var(--dark-blue), var(--light-blue));
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(26, 31, 58, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 140, 0, 0.3);
+    background: linear-gradient(135deg, #e67e00, #e6c200);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+}
+
+.btn-outline-light:hover {
+    background: var(--text-light);
+    color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--gradient-secondary);
+    color: var(--text-light);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://readdy.ai/api/search-image?query=futuristic%20technology%20network%20connections%20artificial%20intelligence%20digital%20transformation%20modern%20workspace%20with%20holographic%20displays%20and%20data%20visualization%20elements%20in%20dark%20blue%20background%20professional%20tech%20environment&width=1920&height=1080&seq=hero1&orientation=landscape') center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--text-light), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+.hero-image img {
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.service-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.service-features img {
+    margin-top: 1rem;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.stat-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #666;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Featured Cases Section */
+.featured-cases-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.case-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.case-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.case-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.case-card:hover .case-image img {
+    transform: scale(1.05);
+}
+
+.case-category {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.case-content {
+    padding: 2rem;
+}
+
+.case-content h4 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.case-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: var(--gradient-secondary);
+    color: var(--text-light);
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Blog Styles */
+.blog-header-section {
+    background: var(--gradient-secondary);
+    color: var(--text-light);
+    padding: 120px 0 80px;
+}
+
+.blog-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.blog-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.blog-posts-section {
+    background: white;
+}
+
+.blog-post-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.post-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-category {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+}
+
+.post-category.health {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.post-category.wellness {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.post-category.utilities {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.post-content {
+    padding: 2rem;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.post-title {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.post-excerpt {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.post-tags {
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--bg-light);
+    color: #666;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Case Study Styles */
+.case-header-section {
+    background: var(--gradient-secondary);
+    color: var(--text-light);
+    padding: 120px 0 80px;
+}
+
+.case-breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.case-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.case-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.case-meta .badge {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.case-content-section {
+    background: white;
+}
+
+.case-section {
+    margin-bottom: 3rem;
+}
+
+.case-section h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.case-section h3 {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card {
+    background: var(--bg-light);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.result-stat h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.tech-badge {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+}
+
+.bg-primary-gradient {
+    background: var(--gradient-primary) !important;
+}
+
+.bg-success-gradient {
+    background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
+}
+
+.bg-warning-gradient {
+    background: linear-gradient(135deg, #f39c12, #e67e22) !important;
+}
+
+.bg-info-gradient {
+    background: linear-gradient(135deg, #3498db, #2980b9) !important;
+}
+
+.bg-secondary-gradient {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d) !important;
+}
+
+/* Contact Styles */
+.contact-header-section {
+    background: var(--gradient-secondary);
+    color: var(--text-light);
+    padding: 120px 0 80px;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.contact-form-section {
+    background: white;
+}
+
+.contact-form-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.1);
+}
+
+.contact-info-section {
+    background: var(--bg-light);
+}
+
+.contact-info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--secondary-color);
+}
+
+.faq-section {
+    background: white;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+    background: white;
+    border: none;
+    font-weight: 600;
+    color: var(--dark-blue);
+    padding: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--primary-color);
+    color: white;
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-blue) !important;
+    color: var(--text-light);
+}
+
+footer h5, footer h6 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+footer .text-muted {
+    color: #bbb !important;
+}
+
+footer a.text-muted:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Innovation Cards */
+.innovation-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.innovation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.innovation-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.plan-card {
+    background: var(--bg-light);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .contact-title {
+        font-size: 2.5rem;
+    }
+    
+    .case-title {
+        font-size: 2rem;
+    }
+    
+    .blog-title {
+        font-size: 2.5rem;
+    }
+    
+    .contact-form-card {
+        padding: 2rem;
+    }
+    
+    .service-card,
+    .contact-info-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .cta-buttons .btn {
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .case-meta .badge {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Utilities */
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-gradient-primary {
+    background: var(--gradient-primary);
+}
+
+.bg-gradient-secondary {
+    background: var(--gradient-secondary);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow) !important;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}

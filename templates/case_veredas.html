@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block title %}{{ content.cases.veredas.title if content.cases else 'Protocolo Veredas - Revolucionando o Tratamento de Parkinson' }} - Galeleo{% endblock %}
+
+{% block content %}
+<!-- Case Header -->
+<section class="case-header-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="case-breadcrumb" data-aos="fade-up">
+                    <a href="{{ url_for('blog', lang=lang) }}" class="text-muted">{{ content.nav.blog if content.nav else 'Blog' }}</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-primary">Veredas</span>
+                </div>
+                <h1 class="case-title" data-aos="fade-up" data-aos-delay="100">
+                    {{ content.cases.veredas.full_title if content.cases else 'Protocolo Veredas: Revolucionando o Tratamento de Parkinson' }}
+                </h1>
+                <p class="case-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    {{ content.cases.veredas.subtitle if content.cases else 'Uma plataforma moderna e humanizada voltada ao monitoramento de pacientes com doenças neurodegenerativas, desenvolvida com mais de 16 anos de experiência clínica.' }}
+                </p>
+                <div class="case-meta" data-aos="fade-up" data-aos-delay="300">
+                    <span class="badge bg-primary me-2">{{ content.cases.veredas.category if content.cases else 'Saúde' }}</span>
+                    <span class="badge bg-secondary me-2">IA Médica</span>
+                    <span class="badge bg-success">Neurologia</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="case-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://pixabay.com/get/g6927d1cb78fdba84ff4007bc137ab975b836916d16852f1815e06c6743152da047d8ca5f1a7b911ebee49e6f92807d193fc1061d655e03e14a4b21de055b4029_1280.jpg" 
+                         alt="Protocolo Veredas" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Content -->
+<section class="case-content-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Overview -->
+                <div class="case-section" data-aos="fade-up">
+                    <h2>{{ content.cases.veredas.overview_title if content.cases else 'Visão Geral do Projeto' }}</h2>
+                    <p class="lead">
+                        {{ content.cases.veredas.overview if content.cases else 'O Protocolo Veredas é uma plataforma moderna e humanizada voltada ao monitoramento de pacientes com doenças neurodegenerativas. Na versão 3.0, une tecnologia, organização clínica e inteligência artificial para transformar o acompanhamento diário da saúde.' }}
+                    </p>
+                </div>
+
+                <!-- Challenge -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veredas.challenge_title if content.cases else 'O Desafio' }}</h3>
+                    <p>
+                        {{ content.cases.veredas.challenge if content.cases else 'Pacientes com Parkinson e outras doenças neurodegenerativas enfrentam dificuldades no acompanhamento contínuo de sintomas e na comunicação efetiva com a equipe médica. O monitoramento tradicional é limitado às consultas presenciais, perdendo informações valiosas sobre a evolução diária da condição.' }}
+                    </p>
+                </div>
+
+                <!-- Solution -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veredas.solution_title if content.cases else 'Nossa Solução' }}</h3>
+                    <p>
+                        {{ content.cases.veredas.solution if content.cases else 'Desenvolvemos uma plataforma completa que integra gerenciamento de pacientes, observações automatizadas, visualização de dados, inteligência artificial e comunicação integrada. O sistema permite monitoramento contínuo com insights baseados em IA para apoiar decisões clínicas.' }}
+                    </p>
+                </div>
+
+                <!-- Features -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veredas.features_title if content.cases else 'Principais Funcionalidades' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users-medical"></i>
+                                </div>
+                                <h5>{{ content.cases.veredas.feature1_title if content.cases else 'Gerenciamento de Pacientes' }}</h5>
+                                <p>{{ content.cases.veredas.feature1_desc if content.cases else 'Registros completos com CID-10, histórico médico e controle de medicações' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h5>{{ content.cases.veredas.feature2_title if content.cases else 'Observações Automatizadas' }}</h5>
+                                <p>{{ content.cases.veredas.feature2_desc if content.cases else 'Protocolos médicos programados com escalas de severidade' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>{{ content.cases.veredas.feature3_title if content.cases else 'Inteligência Artificial' }}</h5>
+                                <p>{{ content.cases.veredas.feature3_desc if content.cases else 'Insights baseados em tendências e assistente empático' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h5>{{ content.cases.veredas.feature4_title if content.cases else 'Segurança Avançada' }}</h5>
+                                <p>{{ content.cases.veredas.feature4_desc if content.cases else 'Login com OTP, sessões seguras e proteção anti-bot' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veredas.results_title if content.cases else 'Resultados Alcançados' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-4 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">16+</h4>
+                                <p>{{ content.cases.veredas.result1 if content.cases else 'Anos de desenvolvimento' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">147</h4>
+                                <p>{{ content.cases.veredas.result2 if content.cases else 'Pacientes ativos' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">97%</h4>
+                                <p>{{ content.cases.veredas.result3 if content.cases else 'Satisfação médica' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veredas.tech_title if content.cases else 'Tecnologias Utilizadas' }}</h3>
+                    <div class="row g-3 mt-3">
+                        <div class="col-auto">
+                            <span class="badge bg-primary-gradient tech-badge">Inteligência Artificial</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-success-gradient tech-badge">Cloud Computing</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-warning-gradient tech-badge">Criptografia Avançada</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-info-gradient tech-badge">APIs RESTful</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-secondary-gradient tech-badge">Interface Responsiva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case CTA -->
+<section class="case-cta-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="cta-title mb-4">
+                    {{ content.cases.veredas.cta_title if content.cases else 'Interessado em uma Solução Similar?' }}
+                </h2>
+                <p class="cta-subtitle mb-4">
+                    {{ content.cases.veredas.cta_subtitle if content.cases else 'Vamos conversar sobre como podemos desenvolver uma plataforma personalizada para suas necessidades de saúde digital' }}
+                </p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-comments me-2"></i>
+                        {{ content.cases.veredas.cta_contact if content.cases else 'Falar com Especialista' }}
+                    </a>
+                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        {{ content.cases.veredas.cta_back if content.cases else 'Voltar ao Blog' }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

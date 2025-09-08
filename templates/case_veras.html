@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block title %}{{ content.cases.veras.title if content.cases else 'Veras - Plataforma de Bem-estar Mental com IA' }} - Galeleo{% endblock %}
+
+{% block content %}
+<!-- Case Header -->
+<section class="case-header-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="case-breadcrumb" data-aos="fade-up">
+                    <a href="{{ url_for('blog', lang=lang) }}" class="text-muted">{{ content.nav.blog if content.nav else 'Blog' }}</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-primary">Veras</span>
+                </div>
+                <h1 class="case-title" data-aos="fade-up" data-aos-delay="100">
+                    {{ content.cases.veras.full_title if content.cases else 'Veras: Plataforma de Bem-estar Mental com IA' }}
+                </h1>
+                <p class="case-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    {{ content.cases.veras.subtitle if content.cases else 'Uma plataforma de bem-estar emocional que oferece suporte através de agentes de IA empáticos, criando um espaço seguro para crescimento pessoal e saúde mental.' }}
+                </p>
+                <div class="case-meta" data-aos="fade-up" data-aos-delay="300">
+                    <span class="badge bg-primary me-2">{{ content.cases.veras.category if content.cases else 'Bem-estar' }}</span>
+                    <span class="badge bg-secondary me-2">IA Conversacional</span>
+                    <span class="badge bg-success">Saúde Mental</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="case-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://pixabay.com/get/ga0b836995506830fb17c4d941aed0ab9c7277c7a3c762e0243698047c41468ba409da144f711d1d54b4cbf61a02d11b715bdac25c2a6da838aff0e66f29dd353_1280.jpg" 
+                         alt="Plataforma Veras" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Content -->
+<section class="case-content-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Overview -->
+                <div class="case-section" data-aos="fade-up">
+                    <h2>{{ content.cases.veras.overview_title if content.cases else 'Visão Geral do Projeto' }}</h2>
+                    <p class="lead">
+                        {{ content.cases.veras.overview if content.cases else 'Veras é uma plataforma de bem-estar emocional que combina tecnologia de IA com expertise humana para fornecer cuidados de saúde mental personalizados e acessíveis 24/7. A plataforma oferece suporte através de agentes especializados em diferentes condições emocionais.' }}
+                    </p>
+                </div>
+
+                <!-- Challenge -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.challenge_title if content.cases else 'O Desafio' }}</h3>
+                    <p>
+                        {{ content.cases.veras.challenge if content.cases else 'O acesso à saúde mental de qualidade é limitado por barreiras como custo elevado, falta de profissionais qualificados, estigma social e horários restritos. Muitas pessoas precisam de suporte imediato em momentos de crise, mas não têm acesso a ajuda profissional quando mais precisam.' }}
+                    </p>
+                </div>
+
+                <!-- Solution -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.solution_title if content.cases else 'Nossa Solução' }}</h3>
+                    <p>
+                        {{ content.cases.veras.solution if content.cases else 'Desenvolvemos uma plataforma que democratiza o acesso ao suporte emocional através de agentes de IA especializados em diferentes condições mentais. A solução oferece monitoramento contínuo do estado emocional, intervenção em crises e conexão com profissionais licenciados quando necessário.' }}
+                    </p>
+                </div>
+
+                <!-- Features -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.features_title if content.cases else 'Principais Funcionalidades' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h5>{{ content.cases.veras.feature1_title if content.cases else 'Agentes de IA Especializados' }}</h5>
+                                <p>{{ content.cases.veras.feature1_desc if content.cases else 'Suporte 24/7 para ansiedade, depressão, estresse e crises' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart-pulse"></i>
+                                </div>
+                                <h5>{{ content.cases.veras.feature2_title if content.cases else 'Monitoramento Emocional' }}</h5>
+                                <p>{{ content.cases.veras.feature2_desc if content.cases else 'Análise em tempo real do estado emocional e padrões de humor' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <h5>{{ content.cases.veras.feature3_title if content.cases else 'Acesso a Profissionais' }}</h5>
+                                <p>{{ content.cases.veras.feature3_desc if content.cases else 'Conexão direta com psicólogos e terapeutas licenciados' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h5>{{ content.cases.veras.feature4_title if content.cases else 'Privacidade Total' }}</h5>
+                                <p>{{ content.cases.veras.feature4_desc if content.cases else 'Criptografia ponta a ponta e conformidade com LGPD' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plans -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.plans_title if content.cases else 'Modelos de Atendimento' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-4">
+                            <div class="plan-card">
+                                <h5 class="text-primary">{{ content.cases.veras.plan1_title if content.cases else 'Gratuito' }}</h5>
+                                <p>{{ content.cases.veras.plan1_desc if content.cases else 'Suporte básico de IA com 10 conversas diárias' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="plan-card">
+                                <h5 class="text-success">{{ content.cases.veras.plan2_title if content.cases else 'Freemium' }}</h5>
+                                <p>{{ content.cases.veras.plan2_desc if content.cases else 'Agentes especializados com 30 conversas diárias' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="plan-card">
+                                <h5 class="text-warning">{{ content.cases.veras.plan3_title if content.cases else 'Premium' }}</h5>
+                                <p>{{ content.cases.veras.plan3_desc if content.cases else 'Acesso completo incluindo profissionais licenciados' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.results_title if content.cases else 'Resultados Alcançados' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-4 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">1000+</h4>
+                                <p>{{ content.cases.veras.result1 if content.cases else 'Usuários ativos' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">4.9/5</h4>
+                                <p>{{ content.cases.veras.result2 if content.cases else 'Avaliação dos usuários' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">24/7</h4>
+                                <p>{{ content.cases.veras.result3 if content.cases else 'Disponibilidade' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.tech_title if content.cases else 'Tecnologias Utilizadas' }}</h3>
+                    <div class="row g-3 mt-3">
+                        <div class="col-auto">
+                            <span class="badge bg-primary-gradient tech-badge">IA Conversacional</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-success-gradient tech-badge">NLP Avançado</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-warning-gradient tech-badge">Análise de Sentimentos</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-info-gradient tech-badge">Chat em Tempo Real</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-secondary-gradient tech-badge">Criptografia E2E</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case CTA -->
+<section class="case-cta-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="cta-title mb-4">
+                    {{ content.cases.veras.cta_title if content.cases else 'Precisa de uma Plataforma de Bem-estar?' }}
+                </h2>
+                <p class="cta-subtitle mb-4">
+                    {{ content.cases.veras.cta_subtitle if content.cases else 'Vamos desenvolver uma solução de saúde mental personalizada para sua organização ou comunidade' }}
+                </p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-heart me-2"></i>
+                        {{ content.cases.veras.cta_contact if content.cases else 'Criar Solução de Bem-estar' }}
+                    </a>
+                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        {{ content.cases.veras.cta_back if content.cases else 'Voltar ao Blog' }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

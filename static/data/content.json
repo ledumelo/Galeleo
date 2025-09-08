@@ -1,0 +1,710 @@
+{
+  "pt": {
+    "nav": {
+      "home": "Home",
+      "blog": "Blog",
+      "contact": "Contato"
+    },
+    "hero": {
+      "title": "Transformando Ideias em Soluções Inteligentes",
+      "subtitle": "Desde 1983 desenvolvendo tecnologia de ponta. Especialista em Video Coding, Agentes de IA e Integrações Multi-plataformas para projetos altamente escaláveis.",
+      "cta_projects": "Conheça Nossos Projetos",
+      "cta_contact": "Fale Conosco"
+    },
+    "services": {
+      "title": "Nossos Serviços",
+      "subtitle": "Oferecemos soluções tecnológicas inovadoras com foco em eficiência operacional e custos altamente competitivos",
+      "video_coding": {
+        "title": "Video Coding",
+        "description": "Otimização de entregas com alta qualidade através de técnicas avançadas de codificação e processamento de vídeo"
+      },
+      "ai_agents": {
+        "title": "Agentes de IA",
+        "description": "Criação de agentes inteligentes personalizados para automatizar processos e melhorar a experiência do usuário"
+      },
+      "integrations": {
+        "title": "Integrações Multi-plataformas",
+        "description": "Desenvolvimento de soluções escaláveis que conectam diferentes sistemas e plataformas de forma eficiente"
+      }
+    },
+    "experience": {
+      "title": "Mais de 40 Anos de Experiência",
+      "description": "Desde 1983, atuo como consultor em tecnologia da informação, sempre buscando soluções inovadoras para desafios complexos. Em 1992, fundei a Galeleo para atender de forma mais estruturada empresas de diversos segmentos.",
+      "current_focus": "Hoje, minha atuação é focada em video coding, criação de agentes de IA e integrações multi-plataformas, viabilizando projetos altamente escaláveis com eficiência operacional e custos competitivos.",
+      "years_experience": "Anos de Experiência",
+      "years_galeleo": "Anos da Galeleo"
+    },
+    "cases": {
+      "title": "Casos de Sucesso",
+      "subtitle": "Conheça alguns dos projetos inovadores que desenvolvemos utilizando inteligência artificial e tecnologias avançadas",
+      "read_more": "Ler Mais",
+      "veredas": {
+        "category": "Saúde",
+        "title": "Veredas: Revolucionando o Tratamento de Parkinson",
+        "description": "Sistema inovador que integra monitoramento remoto, exercícios personalizados e IA para otimizar o tratamento de Parkinson, melhorando significativamente a qualidade de vida dos pacientes.",
+        "full_title": "Protocolo Veredas: Revolucionando o Tratamento de Parkinson",
+        "subtitle": "Uma plataforma moderna e humanizada voltada ao monitoramento de pacientes com doenças neurodegenerativas, desenvolvida com mais de 16 anos de experiência clínica.",
+        "overview_title": "Visão Geral do Projeto",
+        "overview": "O Protocolo Veredas é uma plataforma moderna e humanizada voltada ao monitoramento de pacientes com doenças neurodegenerativas. Na versão 3.0, une tecnologia, organização clínica e inteligência artificial para transformar o acompanhamento diário da saúde.",
+        "challenge_title": "O Desafio",
+        "challenge": "Pacientes com Parkinson e outras doenças neurodegenerativas enfrentam dificuldades no acompanhamento contínuo de sintomas e na comunicação efetiva com a equipe médica. O monitoramento tradicional é limitado às consultas presenciais, perdendo informações valiosas sobre a evolução diária da condição.",
+        "solution_title": "Nossa Solução",
+        "solution": "Desenvolvemos uma plataforma completa que integra gerenciamento de pacientes, observações automatizadas, visualização de dados, inteligência artificial e comunicação integrada. O sistema permite monitoramento contínuo com insights baseados em IA para apoiar decisões clínicas.",
+        "features_title": "Principais Funcionalidades",
+        "feature1_title": "Gerenciamento de Pacientes",
+        "feature1_desc": "Registros completos com CID-10, histórico médico e controle de medicações",
+        "feature2_title": "Observações Automatizadas",
+        "feature2_desc": "Protocolos médicos programados com escalas de severidade",
+        "feature3_title": "Inteligência Artificial",
+        "feature3_desc": "Insights baseados em tendências e assistente empático",
+        "feature4_title": "Segurança Avançada",
+        "feature4_desc": "Login com OTP, sessões seguras e proteção anti-bot",
+        "results_title": "Resultados Alcançados",
+        "result1": "Anos de desenvolvimento",
+        "result2": "Pacientes ativos",
+        "result3": "Satisfação médica",
+        "tech_title": "Tecnologias Utilizadas",
+        "cta_title": "Interessado em uma Solução Similar?",
+        "cta_subtitle": "Vamos conversar sobre como podemos desenvolver uma plataforma personalizada para suas necessidades de saúde digital",
+        "cta_contact": "Falar com Especialista",
+        "cta_back": "Voltar ao Blog"
+      },
+      "veras": {
+        "category": "Bem-estar",
+        "title": "Veras: Seu Companheiro de Bem-estar Mental",
+        "description": "Plataforma inteligente que combina terapia cognitivo-comportamental com IA para oferecer suporte emocional personalizado e acompanhamento contínuo do bem-estar mental.",
+        "full_title": "Veras: Plataforma de Bem-estar Mental com IA",
+        "subtitle": "Uma plataforma de bem-estar emocional que oferece suporte através de agentes de IA empáticos, criando um espaço seguro para crescimento pessoal e saúde mental.",
+        "overview_title": "Visão Geral do Projeto",
+        "overview": "Veras é uma plataforma de bem-estar emocional que combina tecnologia de IA com expertise humana para fornecer cuidados de saúde mental personalizados e acessíveis 24/7. A plataforma oferece suporte através de agentes especializados em diferentes condições emocionais.",
+        "challenge_title": "O Desafio",
+        "challenge": "O acesso à saúde mental de qualidade é limitado por barreiras como custo elevado, falta de profissionais qualificados, estigma social e horários restritos. Muitas pessoas precisam de suporte imediato em momentos de crise, mas não têm acesso a ajuda profissional quando mais precisam.",
+        "solution_title": "Nossa Solução",
+        "solution": "Desenvolvemos uma plataforma que democratiza o acesso ao suporte emocional através de agentes de IA especializados em diferentes condições mentais. A solução oferece monitoramento contínuo do estado emocional, intervenção em crises e conexão com profissionais licenciados quando necessário.",
+        "features_title": "Principais Funcionalidades",
+        "feature1_title": "Agentes de IA Especializados",
+        "feature1_desc": "Suporte 24/7 para ansiedade, depressão, estresse e crises",
+        "feature2_title": "Monitoramento Emocional",
+        "feature2_desc": "Análise em tempo real do estado emocional e padrões de humor",
+        "feature3_title": "Acesso a Profissionais",
+        "feature3_desc": "Conexão direta com psicólogos e terapeutas licenciados",
+        "feature4_title": "Privacidade Total",
+        "feature4_desc": "Criptografia ponta a ponta e conformidade com LGPD",
+        "plans_title": "Modelos de Atendimento",
+        "plan1_title": "Gratuito",
+        "plan1_desc": "Suporte básico de IA com 10 conversas diárias",
+        "plan2_title": "Freemium",
+        "plan2_desc": "Agentes especializados com 30 conversas diárias",
+        "plan3_title": "Premium",
+        "plan3_desc": "Acesso completo incluindo profissionais licenciados",
+        "results_title": "Resultados Alcançados",
+        "result1": "Usuários ativos",
+        "result2": "Avaliação dos usuários",
+        "result3": "Disponibilidade",
+        "tech_title": "Tecnologias Utilizadas",
+        "cta_title": "Precisa de uma Plataforma de Bem-estar?",
+        "cta_subtitle": "Vamos desenvolver uma solução de saúde mental personalizada para sua organização ou comunidade",
+        "cta_contact": "Criar Solução de Bem-estar",
+        "cta_back": "Voltar ao Blog"
+      },
+      "hydroapp": {
+        "category": "Smart Cities",
+        "title": "HydroApp: Gestão Inteligente de Recursos",
+        "description": "Sistema revolucionário que automatiza a gestão de água e gás em condomínios, utilizando IA para monitoramento em tempo real e redução significativa de custos.",
+        "full_title": "HydroApp: Gestão Inteligente de Recursos Hídricos",
+        "subtitle": "Sistema revolucionário que combina IoT e IA para automatizar a gestão de água e gás em condomínios, oferecendo monitoramento em tempo real e economia significativa.",
+        "overview_title": "Visão Geral do Projeto",
+        "overview": "HydroApp é uma solução completa de gestão inteligente que revoluciona o monitoramento de água e gás em condomínios. Utilizando sensores fotométricos IoT e inteligência artificial, o sistema oferece leituras automáticas, detecção de vazamentos e economia significativa de recursos.",
+        "challenge_title": "O Desafio",
+        "challenge": "A gestão tradicional de recursos em condomínios enfrenta problemas como leituras manuais imprecisas, fraudes em medidores, detecção tardia de vazamentos, altos custos operacionais e dificuldade no controle de consumo. Esses fatores resultam em desperdício significativo e custos elevados para os moradores.",
+        "solution_title": "Nossa Solução",
+        "solution": "Desenvolvemos um sistema completo que combina sensores IoT inteligentes, processamento de dados em tempo real e IA preditiva. A solução oferece leituras automáticas precisas, alertas imediatos de vazamentos, análise de padrões de consumo e dashboard intuitivo para gestão completa dos recursos.",
+        "features_title": "Principais Funcionalidades",
+        "feature1_title": "Leitura Fotométrica",
+        "feature1_desc": "Sensores inteligentes que capturam leituras precisas automaticamente",
+        "feature2_title": "Alertas em Tempo Real",
+        "feature2_desc": "Notificações instantâneas sobre vazamentos e anomalias",
+        "feature3_title": "Dashboard Analítico",
+        "feature3_desc": "Visualização completa do consumo com insights acionáveis",
+        "feature4_title": "IA Preditiva",
+        "feature4_desc": "Algoritmos que preveem problemas antes que ocorram",
+        "innovation_title": "Inovação Tecnológica",
+        "tech1_title": "IoT Embarcado",
+        "tech1_desc": "Sensores com processamento local e transmissão segura",
+        "tech2_title": "Rede Mesh",
+        "tech2_desc": "Conectividade proprietária para áreas de difícil acesso",
+        "tech3_title": "Visão Computacional",
+        "tech3_desc": "Reconhecimento óptico de dígitos em medidores",
+        "results_title": "Resultados Alcançados",
+        "result1": "Redução no consumo",
+        "result2": "Precisão nas leituras",
+        "result3": "Tempo de detecção de vazamentos",
+        "result4": "Economia mensal média",
+        "tech_title": "Tecnologias Utilizadas",
+        "cta_title": "Quer Implementar Gestão Inteligente?",
+        "cta_subtitle": "Vamos desenvolver uma solução IoT personalizada para automatizar a gestão de recursos em seu empreendimento",
+        "cta_contact": "Solicitar Demonstração",
+        "cta_back": "Voltar ao Blog"
+      }
+    },
+    "cta": {
+      "title": "Vamos Transformar Sua Ideia em Realidade",
+      "subtitle": "Entre em contato e descubra como nossas soluções de IA podem revolucionar seu negócio",
+      "button": "Enviar Mensagem"
+    },
+    "blog": {
+      "title": "Casos de Sucesso",
+      "subtitle": "Descubra como transformamos desafios complexos em soluções inovadoras através da tecnologia",
+      "read_more": "Ler Mais",
+      "veredas": {
+        "category": "Saúde",
+        "title": "Protocolo Veredas: Revolucionando o Tratamento de Parkinson",
+        "excerpt": "Uma plataforma moderna e humanizada voltada ao monitoramento de pacientes com doenças neurodegenerativas, desenvolvida com 16 anos de experiência clínica e tecnologia de ponta.",
+        "date": "2024",
+        "reading_time": "5 min"
+      },
+      "veras": {
+        "category": "Bem-estar",
+        "title": "Veras: Plataforma de Bem-estar Mental com IA",
+        "excerpt": "Uma plataforma de bem-estar emocional que oferece suporte através de agentes de IA empáticos, criando um espaço seguro para crescimento pessoal e saúde mental.",
+        "date": "2024",
+        "reading_time": "4 min"
+      },
+      "hydroapp": {
+        "category": "Smart Cities",
+        "title": "HydroApp: Gestão Inteligente de Recursos Hídricos",
+        "excerpt": "Sistema revolucionário que combina IoT e IA para automatizar a gestão de água e gás em condomínios, oferecendo monitoramento em tempo real e economia significativa.",
+        "date": "2024",
+        "reading_time": "6 min"
+      },
+      "cta": {
+        "title": "Tem um Projeto em Mente?",
+        "subtitle": "Vamos conversar sobre como podemos transformar sua ideia em uma solução inovadora",
+        "button": "Iniciar Projeto"
+      }
+    },
+    "contact": {
+      "title": "Fale Conosco",
+      "subtitle": "Vamos conversar sobre como podemos transformar sua ideia em uma solução inovadora",
+      "form": {
+        "name": "Nome Completo",
+        "name_placeholder": "Seu nome completo",
+        "email": "Email",
+        "email_placeholder": "seu@email.com",
+        "subject": "Assunto",
+        "subject_placeholder": "Selecione um assunto",
+        "subject1": "Video Coding e Otimização",
+        "subject2": "Agentes de IA",
+        "subject3": "Integrações Multi-plataformas",
+        "subject4": "Soluções para Saúde",
+        "subject5": "Smart Cities / IoT",
+        "subject6": "Consultoria Tecnológica",
+        "subject7": "Outros",
+        "message": "Mensagem",
+        "message_placeholder": "Descreva seu projeto ou dúvida em detalhes...",
+        "message_help": "Máximo de 1000 caracteres",
+        "submit": "Enviar Mensagem"
+      },
+      "info": {
+        "email_title": "Email",
+        "email_desc": "Envie sua mensagem diretamente:",
+        "phone_title": "Telefone",
+        "phone_desc": "Ligue para uma conversa direta:",
+        "hours_title": "Horário",
+        "hours_desc": "Atendimento comercial:",
+        "hours_time": "Segunda a Sexta, 9h às 18h"
+      },
+      "faq": {
+        "title": "Perguntas Frequentes",
+        "q1": "Qual é o tempo médio para desenvolvimento de um projeto?",
+        "a1": "O tempo varia conforme a complexidade do projeto. Projetos simples de IA podem levar de 2-4 semanas, enquanto soluções completas como o Protocolo Veredas levam de 3-6 meses. Sempre fornecemos um cronograma detalhado após a análise inicial.",
+        "q2": "Vocês trabalham com projetos internacionais?",
+        "a2": "Sim! Com mais de 40 anos de experiência, atendemos clientes no Brasil e exterior. Oferecemos suporte em português, inglês e espanhol, garantindo comunicação eficiente em projetos globais.",
+        "q3": "Como funciona o suporte pós-entrega?",
+        "a3": "Oferecemos garantia de 6 meses para correções de bugs e 12 meses de suporte técnico. Também disponibilizamos contratos de manutenção e evolução contínua conforme a necessidade do cliente."
+      },
+      "success": "Mensagem enviada com sucesso! Retornaremos em breve.",
+      "error_required": "Todos os campos são obrigatórios.",
+      "error_email": "Email inválido."
+    },
+    "footer": {
+      "description": "Transformando ideias em soluções inteligentes desde 1983.",
+      "links_title": "Links",
+      "contact_title": "Contato",
+      "rights": "Todos os direitos reservados.",
+      "since": "Inovando desde"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Transforming Ideas into Intelligent Solutions",
+      "subtitle": "Developing cutting-edge technology since 1983. Specialist in Video Coding, AI Agents and Multi-platform Integrations for highly scalable projects.",
+      "cta_projects": "Discover Our Projects",
+      "cta_contact": "Contact Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We offer innovative technological solutions focused on operational efficiency and highly competitive costs",
+      "video_coding": {
+        "title": "Video Coding",
+        "description": "Delivery optimization with high quality through advanced video encoding and processing techniques"
+      },
+      "ai_agents": {
+        "title": "AI Agents",
+        "description": "Creation of personalized intelligent agents to automate processes and improve user experience"
+      },
+      "integrations": {
+        "title": "Multi-platform Integrations",
+        "description": "Development of scalable solutions that efficiently connect different systems and platforms"
+      }
+    },
+    "experience": {
+      "title": "Over 40 Years of Experience",
+      "description": "Since 1983, I have been working as an information technology consultant, always seeking innovative solutions for complex challenges. In 1992, I founded Galeleo to serve companies from various segments in a more structured way.",
+      "current_focus": "Today, my work focuses on video coding, creation of AI agents and multi-platform integrations, enabling highly scalable projects with operational efficiency and competitive costs.",
+      "years_experience": "Years of Experience",
+      "years_galeleo": "Years of Galeleo"
+    },
+    "cases": {
+      "title": "Success Stories",
+      "subtitle": "Learn about some of the innovative projects we have developed using artificial intelligence and advanced technologies",
+      "read_more": "Read More",
+      "veredas": {
+        "category": "Healthcare",
+        "title": "Veredas: Revolutionizing Parkinson's Treatment",
+        "description": "Innovative system that integrates remote monitoring, personalized exercises and AI to optimize Parkinson's treatment, significantly improving patients' quality of life.",
+        "full_title": "Veredas Protocol: Revolutionizing Parkinson's Treatment",
+        "subtitle": "A modern and humanized platform for monitoring patients with neurodegenerative diseases, developed with over 16 years of clinical experience.",
+        "overview_title": "Project Overview",
+        "overview": "The Veredas Protocol is a modern and humanized platform for monitoring patients with neurodegenerative diseases. In version 3.0, it combines technology, clinical organization and artificial intelligence to transform daily health monitoring.",
+        "challenge_title": "The Challenge",
+        "challenge": "Patients with Parkinson's and other neurodegenerative diseases face difficulties in continuous symptom monitoring and effective communication with the medical team. Traditional monitoring is limited to in-person consultations, losing valuable information about the daily evolution of the condition.",
+        "solution_title": "Our Solution",
+        "solution": "We developed a complete platform that integrates patient management, automated observations, data visualization, artificial intelligence and integrated communication. The system allows continuous monitoring with AI-based insights to support clinical decisions.",
+        "features_title": "Key Features",
+        "feature1_title": "Patient Management",
+        "feature1_desc": "Complete records with ICD-10, medical history and medication control",
+        "feature2_title": "Automated Observations",
+        "feature2_desc": "Programmed medical protocols with severity scales",
+        "feature3_title": "Artificial Intelligence",
+        "feature3_desc": "Insights based on trends and empathetic assistant",
+        "feature4_title": "Advanced Security",
+        "feature4_desc": "OTP login, secure sessions and anti-bot protection",
+        "results_title": "Results Achieved",
+        "result1": "Years of development",
+        "result2": "Active patients",
+        "result3": "Medical satisfaction",
+        "tech_title": "Technologies Used",
+        "cta_title": "Interested in a Similar Solution?",
+        "cta_subtitle": "Let's talk about how we can develop a personalized platform for your digital health needs",
+        "cta_contact": "Talk to Specialist",
+        "cta_back": "Back to Blog"
+      },
+      "veras": {
+        "category": "Wellness",
+        "title": "Veras: Your Mental Wellness Companion",
+        "description": "Intelligent platform that combines cognitive-behavioral therapy with AI to offer personalized emotional support and continuous mental wellness monitoring.",
+        "full_title": "Veras: Mental Wellness Platform with AI",
+        "subtitle": "An emotional wellness platform that offers support through empathetic AI agents, creating a safe space for personal growth and mental health.",
+        "overview_title": "Project Overview",
+        "overview": "Veras is an emotional wellness platform that combines AI technology with human expertise to provide personalized and accessible mental health care 24/7. The platform offers support through specialized agents for different emotional conditions.",
+        "challenge_title": "The Challenge",
+        "challenge": "Access to quality mental health is limited by barriers such as high costs, lack of qualified professionals, social stigma and restricted hours. Many people need immediate support in crisis moments, but don't have access to professional help when they need it most.",
+        "solution_title": "Our Solution",
+        "solution": "We developed a platform that democratizes access to emotional support through AI agents specialized in different mental conditions. The solution offers continuous monitoring of emotional state, crisis intervention and connection with licensed professionals when needed.",
+        "features_title": "Key Features",
+        "feature1_title": "Specialized AI Agents",
+        "feature1_desc": "24/7 support for anxiety, depression, stress and crises",
+        "feature2_title": "Emotional Monitoring",
+        "feature2_desc": "Real-time analysis of emotional state and mood patterns",
+        "feature3_title": "Access to Professionals",
+        "feature3_desc": "Direct connection with licensed psychologists and therapists",
+        "feature4_title": "Complete Privacy",
+        "feature4_desc": "End-to-end encryption and GDPR compliance",
+        "plans_title": "Service Models",
+        "plan1_title": "Free",
+        "plan1_desc": "Basic AI support with 10 daily conversations",
+        "plan2_title": "Freemium",
+        "plan2_desc": "Specialized agents with 30 daily conversations",
+        "plan3_title": "Premium",
+        "plan3_desc": "Complete access including licensed professionals",
+        "results_title": "Results Achieved",
+        "result1": "Active users",
+        "result2": "User rating",
+        "result3": "Availability",
+        "tech_title": "Technologies Used",
+        "cta_title": "Need a Wellness Platform?",
+        "cta_subtitle": "Let's develop a personalized mental health solution for your organization or community",
+        "cta_contact": "Create Wellness Solution",
+        "cta_back": "Back to Blog"
+      },
+      "hydroapp": {
+        "category": "Smart Cities",
+        "title": "HydroApp: Intelligent Resource Management",
+        "description": "Revolutionary system that automates water and gas management in condominiums, using AI for real-time monitoring and significant cost reduction.",
+        "full_title": "HydroApp: Intelligent Water Resource Management",
+        "subtitle": "Revolutionary system that combines IoT and AI to automate water and gas management in condominiums, offering real-time monitoring and significant savings.",
+        "overview_title": "Project Overview",
+        "overview": "HydroApp is a complete intelligent management solution that revolutionizes water and gas monitoring in condominiums. Using IoT photometric sensors and artificial intelligence, the system offers automatic readings, leak detection and significant resource savings.",
+        "challenge_title": "The Challenge",
+        "challenge": "Traditional resource management in condominiums faces problems such as inaccurate manual readings, meter fraud, late leak detection, high operational costs and difficulty in consumption control. These factors result in significant waste and high costs for residents.",
+        "solution_title": "Our Solution",
+        "solution": "We developed a complete system that combines intelligent IoT sensors, real-time data processing and predictive AI. The solution offers precise automatic readings, immediate leak alerts, consumption pattern analysis and intuitive dashboard for complete resource management.",
+        "features_title": "Key Features",
+        "feature1_title": "Photometric Reading",
+        "feature1_desc": "Smart sensors that automatically capture precise readings",
+        "feature2_title": "Real-time Alerts",
+        "feature2_desc": "Instant notifications about leaks and anomalies",
+        "feature3_title": "Analytical Dashboard",
+        "feature3_desc": "Complete consumption visualization with actionable insights",
+        "feature4_title": "Predictive AI",
+        "feature4_desc": "Algorithms that predict problems before they occur",
+        "innovation_title": "Technological Innovation",
+        "tech1_title": "Embedded IoT",
+        "tech1_desc": "Sensors with local processing and secure transmission",
+        "tech2_title": "Mesh Network",
+        "tech2_desc": "Proprietary connectivity for hard-to-reach areas",
+        "tech3_title": "Computer Vision",
+        "tech3_desc": "Optical digit recognition in meters",
+        "results_title": "Results Achieved",
+        "result1": "Consumption reduction",
+        "result2": "Reading accuracy",
+        "result3": "Leak detection time",
+        "result4": "Average monthly savings",
+        "tech_title": "Technologies Used",
+        "cta_title": "Want to Implement Smart Management?",
+        "cta_subtitle": "Let's develop a personalized IoT solution to automate resource management in your development",
+        "cta_contact": "Request Demonstration",
+        "cta_back": "Back to Blog"
+      }
+    },
+    "cta": {
+      "title": "Let's Transform Your Idea into Reality",
+      "subtitle": "Get in touch and discover how our AI solutions can revolutionize your business",
+      "button": "Send Message"
+    },
+    "blog": {
+      "title": "Success Stories",
+      "subtitle": "Discover how we transform complex challenges into innovative solutions through technology",
+      "read_more": "Read More",
+      "veredas": {
+        "category": "Healthcare",
+        "title": "Veredas Protocol: Revolutionizing Parkinson's Treatment",
+        "excerpt": "A modern and humanized platform for monitoring patients with neurodegenerative diseases, developed with 16 years of clinical experience and cutting-edge technology.",
+        "date": "2024",
+        "reading_time": "5 min"
+      },
+      "veras": {
+        "category": "Wellness",
+        "title": "Veras: Mental Wellness Platform with AI",
+        "excerpt": "An emotional wellness platform that offers support through empathetic AI agents, creating a safe space for personal growth and mental health.",
+        "date": "2024",
+        "reading_time": "4 min"
+      },
+      "hydroapp": {
+        "category": "Smart Cities",
+        "title": "HydroApp: Intelligent Water Resource Management",
+        "excerpt": "Revolutionary system that combines IoT and AI to automate water and gas management in condominiums, offering real-time monitoring and significant savings.",
+        "date": "2024",
+        "reading_time": "6 min"
+      },
+      "cta": {
+        "title": "Have a Project in Mind?",
+        "subtitle": "Let's talk about how we can transform your idea into an innovative solution",
+        "button": "Start Project"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Let's talk about how we can transform your idea into an innovative solution",
+      "form": {
+        "name": "Full Name",
+        "name_placeholder": "Your full name",
+        "email": "Email",
+        "email_placeholder": "your@email.com",
+        "subject": "Subject",
+        "subject_placeholder": "Select a subject",
+        "subject1": "Video Coding and Optimization",
+        "subject2": "AI Agents",
+        "subject3": "Multi-platform Integrations",
+        "subject4": "Healthcare Solutions",
+        "subject5": "Smart Cities / IoT",
+        "subject6": "Technology Consulting",
+        "subject7": "Others",
+        "message": "Message",
+        "message_placeholder": "Describe your project or question in detail...",
+        "message_help": "Maximum of 1000 characters",
+        "submit": "Send Message"
+      },
+      "info": {
+        "email_title": "Email",
+        "email_desc": "Send your message directly:",
+        "phone_title": "Phone",
+        "phone_desc": "Call for a direct conversation:",
+        "hours_title": "Hours",
+        "hours_desc": "Business hours:",
+        "hours_time": "Monday to Friday, 9 AM to 6 PM"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": "What is the average time for project development?",
+        "a1": "Time varies according to project complexity. Simple AI projects can take 2-4 weeks, while complete solutions like the Veredas Protocol take 3-6 months. We always provide a detailed schedule after the initial analysis.",
+        "q2": "Do you work with international projects?",
+        "a2": "Yes! With over 40 years of experience, we serve clients in Brazil and abroad. We offer support in Portuguese, English and Spanish, ensuring efficient communication in global projects.",
+        "q3": "How does post-delivery support work?",
+        "a3": "We offer a 6-month warranty for bug fixes and 12 months of technical support. We also provide maintenance and continuous evolution contracts according to client needs."
+      },
+      "success": "Message sent successfully! We will get back to you soon.",
+      "error_required": "All fields are required.",
+      "error_email": "Invalid email."
+    },
+    "footer": {
+      "description": "Transforming ideas into intelligent solutions since 1983.",
+      "links_title": "Links",
+      "contact_title": "Contact",
+      "rights": "All rights reserved.",
+      "since": "Innovating since"
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "blog": "Blog",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "title": "Transformando Ideas en Soluciones Inteligentes",
+      "subtitle": "Desarrollando tecnología de vanguardia desde 1983. Especialista en Video Coding, Agentes de IA e Integraciones Multi-plataforma para proyectos altamente escalables.",
+      "cta_projects": "Conozca Nuestros Proyectos",
+      "cta_contact": "Contáctanos"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Ofrecemos soluciones tecnológicas innovadoras enfocadas en eficiencia operacional y costos altamente competitivos",
+      "video_coding": {
+        "title": "Video Coding",
+        "description": "Optimización de entregas con alta calidad a través de técnicas avanzadas de codificación y procesamiento de video"
+      },
+      "ai_agents": {
+        "title": "Agentes de IA",
+        "description": "Creación de agentes inteligentes personalizados para automatizar procesos y mejorar la experiencia del usuario"
+      },
+      "integrations": {
+        "title": "Integraciones Multi-plataforma",
+        "description": "Desarrollo de soluciones escalables que conectan eficientemente diferentes sistemas y plataformas"
+      }
+    },
+    "experience": {
+      "title": "Más de 40 Años de Experiencia",
+      "description": "Desde 1983, actúo como consultor en tecnología de la información, siempre buscando soluciones innovadoras para desafíos complejos. En 1992, fundé Galeleo para atender de manera más estructurada empresas de diversos segmentos.",
+      "current_focus": "Hoy, mi actuación se enfoca en video coding, creación de agentes de IA e integraciones multi-plataforma, posibilitando proyectos altamente escalables con eficiencia operacional y costos competitivos.",
+      "years_experience": "Años de Experiencia",
+      "years_galeleo": "Años de Galeleo"
+    },
+    "cases": {
+      "title": "Casos de Éxito",
+      "subtitle": "Conozca algunos de los proyectos innovadores que hemos desarrollado utilizando inteligencia artificial y tecnologías avanzadas",
+      "read_more": "Leer Más",
+      "veredas": {
+        "category": "Salud",
+        "title": "Veredas: Revolucionando el Tratamiento de Parkinson",
+        "description": "Sistema innovador que integra monitoreo remoto, ejercicios personalizados e IA para optimizar el tratamiento de Parkinson, mejorando significativamente la calidad de vida de los pacientes.",
+        "full_title": "Protocolo Veredas: Revolucionando el Tratamiento de Parkinson",
+        "subtitle": "Una plataforma moderna y humanizada para el monitoreo de pacientes con enfermedades neurodegenerativas, desarrollada con más de 16 años de experiencia clínica.",
+        "overview_title": "Visión General del Proyecto",
+        "overview": "El Protocolo Veredas es una plataforma moderna y humanizada para el monitoreo de pacientes con enfermedades neurodegenerativas. En la versión 3.0, une tecnología, organización clínica e inteligencia artificial para transformar el seguimiento diario de la salud.",
+        "challenge_title": "El Desafío",
+        "challenge": "Los pacientes con Parkinson y otras enfermedades neurodegenerativas enfrentan dificultades en el seguimiento continuo de síntomas y en la comunicación efectiva con el equipo médico. El monitoreo tradicional se limita a consultas presenciales, perdiendo información valiosa sobre la evolución diaria de la condición.",
+        "solution_title": "Nuestra Solución",
+        "solution": "Desarrollamos una plataforma completa que integra gestión de pacientes, observaciones automatizadas, visualización de datos, inteligencia artificial y comunicación integrada. El sistema permite monitoreo continuo con insights basados en IA para apoyar decisiones clínicas.",
+        "features_title": "Funcionalidades Principales",
+        "feature1_title": "Gestión de Pacientes",
+        "feature1_desc": "Registros completos con CID-10, historial médico y control de medicaciones",
+        "feature2_title": "Observaciones Automatizadas",
+        "feature2_desc": "Protocolos médicos programados con escalas de severidad",
+        "feature3_title": "Inteligencia Artificial",
+        "feature3_desc": "Insights basados en tendencias y asistente empático",
+        "feature4_title": "Seguridad Avanzada",
+        "feature4_desc": "Login con OTP, sesiones seguras y protección anti-bot",
+        "results_title": "Resultados Alcanzados",
+        "result1": "Años de desarrollo",
+        "result2": "Pacientes activos",
+        "result3": "Satisfacción médica",
+        "tech_title": "Tecnologías Utilizadas",
+        "cta_title": "¿Interesado en una Solución Similar?",
+        "cta_subtitle": "Hablemos sobre cómo podemos desarrollar una plataforma personalizada para sus necesidades de salud digital",
+        "cta_contact": "Hablar con Especialista",
+        "cta_back": "Volver al Blog"
+      },
+      "veras": {
+        "category": "Bienestar",
+        "title": "Veras: Su Compañero de Bienestar Mental",
+        "description": "Plataforma inteligente que combina terapia cognitivo-conductual con IA para ofrecer apoyo emocional personalizado y seguimiento continuo del bienestar mental.",
+        "full_title": "Veras: Plataforma de Bienestar Mental con IA",
+        "subtitle": "Una plataforma de bienestar emocional que ofrece apoyo a través de agentes de IA empáticos, creando un espacio seguro para el crecimiento personal y la salud mental.",
+        "overview_title": "Visión General del Proyecto",
+        "overview": "Veras es una plataforma de bienestar emocional que combina tecnología de IA con experiencia humana para proporcionar cuidados de salud mental personalizados y accesibles 24/7. La plataforma ofrece apoyo a través de agentes especializados en diferentes condiciones emocionales.",
+        "challenge_title": "El Desafío",
+        "challenge": "El acceso a salud mental de calidad está limitado por barreras como altos costos, falta de profesionales calificados, estigma social y horarios restringidos. Muchas personas necesitan apoyo inmediato en momentos de crisis, pero no tienen acceso a ayuda profesional cuando más la necesitan.",
+        "solution_title": "Nuestra Solución",
+        "solution": "Desarrollamos una plataforma que democratiza el acceso al apoyo emocional a través de agentes de IA especializados en diferentes condiciones mentales. La solución ofrece monitoreo continuo del estado emocional, intervención en crisis y conexión con profesionales licenciados cuando es necesario.",
+        "features_title": "Funcionalidades Principales",
+        "feature1_title": "Agentes de IA Especializados",
+        "feature1_desc": "Apoyo 24/7 para ansiedad, depresión, estrés y crisis",
+        "feature2_title": "Monitoreo Emocional",
+        "feature2_desc": "Análisis en tiempo real del estado emocional y patrones de humor",
+        "feature3_title": "Acceso a Profesionales",
+        "feature3_desc": "Conexión directa con psicólogos y terapeutas licenciados",
+        "feature4_title": "Privacidad Total",
+        "feature4_desc": "Cifrado de extremo a extremo y cumplimiento de GDPR",
+        "plans_title": "Modelos de Atención",
+        "plan1_title": "Gratuito",
+        "plan1_desc": "Apoyo básico de IA con 10 conversaciones diarias",
+        "plan2_title": "Freemium",
+        "plan2_desc": "Agentes especializados con 30 conversaciones diarias",
+        "plan3_title": "Premium",
+        "plan3_desc": "Acceso completo incluyendo profesionales licenciados",
+        "results_title": "Resultados Alcanzados",
+        "result1": "Usuarios activos",
+        "result2": "Evaluación de usuarios",
+        "result3": "Disponibilidad",
+        "tech_title": "Tecnologías Utilizadas",
+        "cta_title": "¿Necesita una Plataforma de Bienestar?",
+        "cta_subtitle": "Desarrollemos una solución de salud mental personalizada para su organización o comunidad",
+        "cta_contact": "Crear Solución de Bienestar",
+        "cta_back": "Volver al Blog"
+      },
+      "hydroapp": {
+        "category": "Ciudades Inteligentes",
+        "title": "HydroApp: Gestión Inteligente de Recursos",
+        "description": "Sistema revolucionario que automatiza la gestión de agua y gas en condominios, utilizando IA para monitoreo en tiempo real y reducción significativa de costos.",
+        "full_title": "HydroApp: Gestión Inteligente de Recursos Hídricos",
+        "subtitle": "Sistema revolucionario que combina IoT e IA para automatizar la gestión de agua y gas en condominios, ofreciendo monitoreo en tiempo real y ahorro significativo.",
+        "overview_title": "Visión General del Proyecto",
+        "overview": "HydroApp es una solución completa de gestión inteligente que revoluciona el monitoreo de agua y gas en condominios. Utilizando sensores fotométricos IoT e inteligencia artificial, el sistema ofrece lecturas automáticas, detección de fugas y ahorro significativo de recursos.",
+        "challenge_title": "El Desafío",
+        "challenge": "La gestión tradicional de recursos en condominios enfrenta problemas como lecturas manuales imprecisas, fraudes en medidores, detección tardía de fugas, altos costos operacionales y dificultad en el control de consumo. Estos factores resultan en desperdicio significativo y altos costos para los residentes.",
+        "solution_title": "Nuestra Solución",
+        "solution": "Desarrollamos un sistema completo que combina sensores IoT inteligentes, procesamiento de datos en tiempo real e IA predictiva. La solución ofrece lecturas automáticas precisas, alertas inmediatas de fugas, análisis de patrones de consumo y dashboard intuitivo para gestión completa de recursos.",
+        "features_title": "Funcionalidades Principales",
+        "feature1_title": "Lectura Fotométrica",
+        "feature1_desc": "Sensores inteligentes que capturan lecturas precisas automáticamente",
+        "feature2_title": "Alertas en Tiempo Real",
+        "feature2_desc": "Notificaciones instantáneas sobre fugas y anomalías",
+        "feature3_title": "Dashboard Analítico",
+        "feature3_desc": "Visualización completa del consumo con insights accionables",
+        "feature4_title": "IA Predictiva",
+        "feature4_desc": "Algoritmos que predicen problemas antes de que ocurran",
+        "innovation_title": "Innovación Tecnológica",
+        "tech1_title": "IoT Embebido",
+        "tech1_desc": "Sensores con procesamiento local y transmisión segura",
+        "tech2_title": "Red Mesh",
+        "tech2_desc": "Conectividad propietaria para áreas de difícil acceso",
+        "tech3_title": "Visión Computacional",
+        "tech3_desc": "Reconocimiento óptico de dígitos en medidores",
+        "results_title": "Resultados Alcanzados",
+        "result1": "Reducción en el consumo",
+        "result2": "Precisión en las lecturas",
+        "result3": "Tiempo de detección de fugas",
+        "result4": "Ahorro mensual promedio",
+        "tech_title": "Tecnologías Utilizadas",
+        "cta_title": "¿Quiere Implementar Gestión Inteligente?",
+        "cta_subtitle": "Desarrollemos una solución IoT personalizada para automatizar la gestión de recursos en su emprendimiento",
+        "cta_contact": "Solicitar Demostración",
+        "cta_back": "Volver al Blog"
+      }
+    },
+    "cta": {
+      "title": "Transformemos Su Idea en Realidad",
+      "subtitle": "Póngase en contacto y descubra cómo nuestras soluciones de IA pueden revolucionar su negocio",
+      "button": "Enviar Mensaje"
+    },
+    "blog": {
+      "title": "Casos de Éxito",
+      "subtitle": "Descubra cómo transformamos desafíos complejos en soluciones innovadoras a través de la tecnología",
+      "read_more": "Leer Más",
+      "veredas": {
+        "category": "Salud",
+        "title": "Protocolo Veredas: Revolucionando el Tratamiento de Parkinson",
+        "excerpt": "Una plataforma moderna y humanizada para el monitoreo de pacientes con enfermedades neurodegenerativas, desarrollada con 16 años de experiencia clínica y tecnología de vanguardia.",
+        "date": "2024",
+        "reading_time": "5 min"
+      },
+      "veras": {
+        "category": "Bienestar",
+        "title": "Veras: Plataforma de Bienestar Mental con IA",
+        "excerpt": "Una plataforma de bienestar emocional que ofrece apoyo a través de agentes de IA empáticos, creando un espacio seguro para el crecimiento personal y la salud mental.",
+        "date": "2024",
+        "reading_time": "4 min"
+      },
+      "hydroapp": {
+        "category": "Ciudades Inteligentes",
+        "title": "HydroApp: Gestión Inteligente de Recursos Hídricos",
+        "excerpt": "Sistema revolucionario que combina IoT e IA para automatizar la gestión de agua y gas en condominios, ofreciendo monitoreo en tiempo real y ahorro significativo.",
+        "date": "2024",
+        "reading_time": "6 min"
+      },
+      "cta": {
+        "title": "¿Tiene un Proyecto en Mente?",
+        "subtitle": "Hablemos sobre cómo podemos transformar su idea en una solución innovadora",
+        "button": "Iniciar Proyecto"
+      }
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "Hablemos sobre cómo podemos transformar su idea en una solución innovadora",
+      "form": {
+        "name": "Nombre Completo",
+        "name_placeholder": "Su nombre completo",
+        "email": "Email",
+        "email_placeholder": "su@email.com",
+        "subject": "Asunto",
+        "subject_placeholder": "Seleccione un asunto",
+        "subject1": "Video Coding y Optimización",
+        "subject2": "Agentes de IA",
+        "subject3": "Integraciones Multi-plataforma",
+        "subject4": "Soluciones para Salud",
+        "subject5": "Ciudades Inteligentes / IoT",
+        "subject6": "Consultoría Tecnológica",
+        "subject7": "Otros",
+        "message": "Mensaje",
+        "message_placeholder": "Describa su proyecto o duda en detalle...",
+        "message_help": "Máximo de 1000 caracteres",
+        "submit": "Enviar Mensaje"
+      },
+      "info": {
+        "email_title": "Email",
+        "email_desc": "Envíe su mensaje directamente:",
+        "phone_title": "Teléfono",
+        "phone_desc": "Llame para una conversación directa:",
+        "hours_title": "Horario",
+        "hours_desc": "Atención comercial:",
+        "hours_time": "Lunes a Viernes, 9h a 18h"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "q1": "¿Cuál es el tiempo promedio para el desarrollo de un proyecto?",
+        "a1": "El tiempo varía según la complejidad del proyecto. Proyectos simples de IA pueden tomar de 2-4 semanas, mientras que soluciones completas como el Protocolo Veredas toman de 3-6 meses. Siempre proporcionamos un cronograma detallado después del análisis inicial.",
+        "q2": "¿Trabajan con proyectos internacionales?",
+        "a2": "¡Sí! Con más de 40 años de experiencia, atendemos clientes en Brasil y el exterior. Ofrecemos soporte en portugués, inglés y español, garantizando comunicación eficiente en proyectos globales.",
+        "q3": "¿Cómo funciona el soporte post-entrega?",
+        "a3": "Ofrecemos garantía de 6 meses para correcciones de bugs y 12 meses de soporte técnico. También disponibilizamos contratos de mantenimiento y evolución continua según las necesidades del cliente."
+      },
+      "success": "¡Mensaje enviado con éxito! Le responderemos pronto.",
+      "error_required": "Todos los campos son obligatorios.",
+      "error_email": "Email inválido."
+    },
+    "footer": {
+      "description": "Transformando ideas en soluciones inteligentes desde 1983.",
+      "links_title": "Enlaces",
+      "contact_title": "Contacto",
+      "rights": "Todos los derechos reservados.",
+      "since": "Innovando desde"
+    }
+  }
+}

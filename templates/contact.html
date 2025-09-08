@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block title %}{{ content.contact.title if content.contact else 'Fale Conosco' }} - Galeleo{% endblock %}
+
+{% block content %}
+<!-- Contact Header -->
+<section class="contact-header-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="contact-title" data-aos="fade-up">
+                    {{ content.contact.title if content.contact else 'Fale Conosco' }}
+                </h1>
+                <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    {{ content.contact.subtitle if content.contact else 'Vamos conversar sobre como podemos transformar sua ideia em uma solução inovadora' }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Flash Messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ 'danger' if category == 'error' else 'success' }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                
+                <div class="contact-form-card" data-aos="fade-up">
+                    <form method="POST" class="contact-form">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">
+                                        {{ content.contact.form.name if content.contact else 'Nome Completo' }}
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="name" 
+                                           name="name" 
+                                           required
+                                           placeholder="{{ content.contact.form.name_placeholder if content.contact else 'Seu nome completo' }}">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">
+                                        {{ content.contact.form.email if content.contact else 'Email' }}
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" 
+                                           class="form-control" 
+                                           id="email" 
+                                           name="email" 
+                                           required
+                                           placeholder="{{ content.contact.form.email_placeholder if content.contact else 'seu@email.com' }}">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">
+                                        {{ content.contact.form.subject if content.contact else 'Assunto' }}
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">{{ content.contact.form.subject_placeholder if content.contact else 'Selecione um assunto' }}</option>
+                                        <option value="video-coding">{{ content.contact.form.subject1 if content.contact else 'Video Coding e Otimização' }}</option>
+                                        <option value="ai-agents">{{ content.contact.form.subject2 if content.contact else 'Agentes de IA' }}</option>
+                                        <option value="integrations">{{ content.contact.form.subject3 if content.contact else 'Integrações Multi-plataformas' }}</option>
+                                        <option value="healthcare">{{ content.contact.form.subject4 if content.contact else 'Soluções para Saúde' }}</option>
+                                        <option value="smart-cities">{{ content.contact.form.subject5 if content.contact else 'Smart Cities / IoT' }}</option>
+                                        <option value="consultation">{{ content.contact.form.subject6 if content.contact else 'Consultoria Tecnológica' }}</option>
+                                        <option value="other">{{ content.contact.form.subject7 if content.contact else 'Outros' }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">
+                                        {{ content.contact.form.message if content.contact else 'Mensagem' }}
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <textarea class="form-control" 
+                                              id="message" 
+                                              name="message" 
+                                              rows="6" 
+                                              required
+                                              placeholder="{{ content.contact.form.message_placeholder if content.contact else 'Descreva seu projeto ou dúvida em detalhes...' }}"></textarea>
+                                    <div class="form-text">
+                                        {{ content.contact.form.message_help if content.contact else 'Máximo de 1000 caracteres' }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    {{ content.contact.form.submit if content.contact else 'Enviar Mensagem' }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info -->
+<section class="contact-info-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-info-card h-100">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>{{ content.contact.info.email_title if content.contact else 'Email' }}</h4>
+                    <p class="mb-2">{{ content.contact.info.email_desc if content.contact else 'Envie sua mensagem diretamente:' }}</p>
+                    <a href="mailto:contato@galeleo.com.br" class="contact-link">contato@galeleo.com.br</a>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info-card h-100">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>{{ content.contact.info.phone_title if content.contact else 'Telefone' }}</h4>
+                    <p class="mb-2">{{ content.contact.info.phone_desc if content.contact else 'Ligue para uma conversa direta:' }}</p>
+                    <a href="tel:+5561991705679" class="contact-link">+55 (61) 9 9170-5679</a>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-info-card h-100">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>{{ content.contact.info.hours_title if content.contact else 'Horário' }}</h4>
+                    <p class="mb-2">{{ content.contact.info.hours_desc if content.contact else 'Atendimento comercial:' }}</p>
+                    <span class="contact-link">{{ content.contact.info.hours_time if content.contact else 'Segunda a Sexta, 9h às 18h' }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-5" data-aos="fade-up">
+                    {{ content.contact.faq.title if content.contact else 'Perguntas Frequentes' }}
+                </h2>
+                
+                <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                {{ content.contact.faq.q1 if content.contact else 'Qual é o tempo médio para desenvolvimento de um projeto?' }}
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {{ content.contact.faq.a1 if content.contact else 'O tempo varia conforme a complexidade do projeto. Projetos simples de IA podem levar de 2-4 semanas, enquanto soluções completas como o Protocolo Veredas levam de 3-6 meses. Sempre fornecemos um cronograma detalhado após a análise inicial.' }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                {{ content.contact.faq.q2 if content.contact else 'Vocês trabalham com projetos internacionais?' }}
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {{ content.contact.faq.a2 if content.contact else 'Sim! Com mais de 40 anos de experiência, atendemos clientes no Brasil e exterior. Oferecemos suporte em português, inglês e espanhol, garantindo comunicação eficiente em projetos globais.' }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                {{ content.contact.faq.q3 if content.contact else 'Como funciona o suporte pós-entrega?' }}
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {{ content.contact.faq.a3 if content.contact else 'Oferecemos garantia de 6 meses para correções de bugs e 12 meses de suporte técnico. Também disponibilizamos contratos de manutenção e evolução contínua conforme a necessidade do cliente.' }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

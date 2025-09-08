@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Galeleo - Tecnologia & Inovação{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="{{ url_for('index', lang=lang) }}">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Galeleo" height="40" class="me-2">
+                <span class="fw-bold">Galeleo</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index', lang=lang) }}">
+                            {{ content.nav.home if content.nav else 'Home' }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('blog', lang=lang) }}">
+                            {{ content.nav.blog if content.nav else 'Blog' }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact', lang=lang) }}">
+                            {{ content.nav.contact if content.nav else 'Contato' }}
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Language Switcher -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        {% if lang == 'pt' %}🇧🇷 PT{% elif lang == 'en' %}🇺🇸 EN{% else %}🇪🇸 ES{% endif %}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="?lang=pt">🇧🇷 Português</a></li>
+                        <li><a class="dropdown-item" href="?lang=en">🇺🇸 English</a></li>
+                        <li><a class="dropdown-item" href="?lang=es">🇪🇸 Español</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Galeleo" height="30" class="me-2">
+                        <h5 class="mb-0">Galeleo</h5>
+                    </div>
+                    <p class="text-muted">
+                        {{ content.footer.description if content.footer else 'Transformando ideias em soluções inteligentes desde 1983.' }}
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6>{{ content.footer.links_title if content.footer else 'Links' }}</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ url_for('index', lang=lang) }}" class="text-muted text-decoration-none">{{ content.nav.home if content.nav else 'Home' }}</a></li>
+                        <li><a href="{{ url_for('blog', lang=lang) }}" class="text-muted text-decoration-none">{{ content.nav.blog if content.nav else 'Blog' }}</a></li>
+                        <li><a href="{{ url_for('contact', lang=lang) }}" class="text-muted text-decoration-none">{{ content.nav.contact if content.nav else 'Contato' }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>{{ content.footer.contact_title if content.footer else 'Contato' }}</h6>
+                    <p class="text-muted mb-1">
+                        <i class="fas fa-envelope me-2"></i>
+                        contato@galeleo.com.br
+                    </p>
+                    <p class="text-muted">
+                        <i class="fas fa-phone me-2"></i>
+                        +55 (61) 9 9170-5679
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">
+                        &copy; 2024 Galeleo. {{ content.footer.rights if content.footer else 'Todos os direitos reservados.' }}
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="text-muted">
+                        {{ content.footer.since if content.footer else 'Inovando desde' }} 1983
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

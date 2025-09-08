@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+
+{% block title %}{{ content.cases.hydroapp.title if content.cases else 'HydroApp - Gestão Inteligente de Recursos Hídricos' }} - Galeleo{% endblock %}
+
+{% block content %}
+<!-- Case Header -->
+<section class="case-header-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="case-breadcrumb" data-aos="fade-up">
+                    <a href="{{ url_for('blog', lang=lang) }}" class="text-muted">{{ content.nav.blog if content.nav else 'Blog' }}</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-primary">HydroApp</span>
+                </div>
+                <h1 class="case-title" data-aos="fade-up" data-aos-delay="100">
+                    {{ content.cases.hydroapp.full_title if content.cases else 'HydroApp: Gestão Inteligente de Recursos Hídricos' }}
+                </h1>
+                <p class="case-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    {{ content.cases.hydroapp.subtitle if content.cases else 'Sistema revolucionário que combina IoT e IA para automatizar a gestão de água e gás em condomínios, oferecendo monitoramento em tempo real e economia significativa.' }}
+                </p>
+                <div class="case-meta" data-aos="fade-up" data-aos-delay="300">
+                    <span class="badge bg-primary me-2">{{ content.cases.hydroapp.category if content.cases else 'Smart Cities' }}</span>
+                    <span class="badge bg-secondary me-2">IoT</span>
+                    <span class="badge bg-success">Automação</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="case-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://pixabay.com/get/gcbff7779f5128a8bfd6885a9838d5c2876cb19f59dfa8552001ba294bd9db8ec8feddbb189431aa64594bc4597ddc5ed0fac94e690ea52df0cfc57f8eab65520_1280.jpg" 
+                         alt="HydroApp System" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Content -->
+<section class="case-content-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Overview -->
+                <div class="case-section" data-aos="fade-up">
+                    <h2>{{ content.cases.hydroapp.overview_title if content.cases else 'Visão Geral do Projeto' }}</h2>
+                    <p class="lead">
+                        {{ content.cases.hydroapp.overview if content.cases else 'HydroApp é uma solução completa de gestão inteligente que revolutiona o monitoramento de água e gás em condomínios. Utilizando sensores fotométricos IoT e inteligência artificial, o sistema oferece leituras automáticas, detecção de vazamentos e economia significativa de recursos.' }}
+                    </p>
+                </div>
+
+                <!-- Challenge -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.challenge_title if content.cases else 'O Desafio' }}</h3>
+                    <p>
+                        {{ content.cases.hydroapp.challenge if content.cases else 'A gestão tradicional de recursos em condomínios enfrenta problemas como leituras manuais imprecisas, fraudes em medidores, detecção tardia de vazamentos, altos custos operacionais e dificuldade no controle de consumo. Esses fatores resultam em desperdício significativo e custos elevados para os moradores.' }}
+                    </p>
+                </div>
+
+                <!-- Solution -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.solution_title if content.cases else 'Nossa Solução' }}</h3>
+                    <p>
+                        {{ content.cases.hydroapp.solution if content.cases else 'Desenvolvemos um sistema completo que combina sensores IoT inteligentes, processamento de dados em tempo real e IA preditiva. A solução oferece leituras automáticas precisas, alertas imediatos de vazamentos, análise de padrões de consumo e dashboard intuitivo para gestão completa dos recursos.' }}
+                    </p>
+                </div>
+
+                <!-- Features -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.features_title if content.cases else 'Principais Funcionalidades' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.feature1_title if content.cases else 'Leitura Fotométrica' }}</h5>
+                                <p>{{ content.cases.hydroapp.feature1_desc if content.cases else 'Sensores inteligentes que capturam leituras precisas automaticamente' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.feature2_title if content.cases else 'Alertas em Tempo Real' }}</h5>
+                                <p>{{ content.cases.hydroapp.feature2_desc if content.cases else 'Notificações instantâneas sobre vazamentos e anomalias' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.feature3_title if content.cases else 'Dashboard Analítico' }}</h5>
+                                <p>{{ content.cases.hydroapp.feature3_desc if content.cases else 'Visualização completa do consumo com insights acionáveis' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.feature4_title if content.cases else 'IA Preditiva' }}</h5>
+                                <p>{{ content.cases.hydroapp.feature4_desc if content.cases else 'Algoritmos que preveem problemas antes que ocorram' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Innovation -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.innovation_title if content.cases else 'Inovação Tecnológica' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-4">
+                            <div class="innovation-card">
+                                <div class="innovation-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.tech1_title if content.cases else 'IoT Embarcado' }}</h5>
+                                <p>{{ content.cases.hydroapp.tech1_desc if content.cases else 'Sensores com processamento local e transmissão segura' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="innovation-card">
+                                <div class="innovation-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.tech2_title if content.cases else 'Rede Mesh' }}</h5>
+                                <p>{{ content.cases.hydroapp.tech2_desc if content.cases else 'Conectividade proprietária para áreas de difícil acesso' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="innovation-card">
+                                <div class="innovation-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h5>{{ content.cases.hydroapp.tech3_title if content.cases else 'Visão Computacional' }}</h5>
+                                <p>{{ content.cases.hydroapp.tech3_desc if content.cases else 'Reconhecimento óptico de dígitos em medidores' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.results_title if content.cases else 'Resultados Alcançados' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">30%</h4>
+                                <p>{{ content.cases.hydroapp.result1 if content.cases else 'Redução no consumo' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">95%</h4>
+                                <p>{{ content.cases.hydroapp.result2 if content.cases else 'Precisão nas leituras' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">24h</h4>
+                                <p>{{ content.cases.hydroapp.result3 if content.cases else 'Tempo de detecção de vazamentos' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">R$ 245</h4>
+                                <p>{{ content.cases.hydroapp.result4 if content.cases else 'Economia mensal média' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.tech_title if content.cases else 'Tecnologias Utilizadas' }}</h3>
+                    <div class="row g-3 mt-3">
+                        <div class="col-auto">
+                            <span class="badge bg-primary-gradient tech-badge">Internet das Coisas</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-success-gradient tech-badge">Machine Learning</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-warning-gradient tech-badge">Visão Computacional</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-info-gradient tech-badge">Edge Computing</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-secondary-gradient tech-badge">Cloud Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case CTA -->
+<section class="case-cta-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="cta-title mb-4">
+                    {{ content.cases.hydroapp.cta_title if content.cases else 'Quer Implementar Gestão Inteligente?' }}
+                </h2>
+                <p class="cta-subtitle mb-4">
+                    {{ content.cases.hydroapp.cta_subtitle if content.cases else 'Vamos desenvolver uma solução IoT personalizada para automatizar a gestão de recursos em seu empreendimento' }}
+                </p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-cogs me-2"></i>
+                        {{ content.cases.hydroapp.cta_contact if content.cases else 'Solicitar Demonstração' }}
+                    </a>
+                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        {{ content.cases.hydroapp.cta_back if content.cases else 'Voltar ao Blog' }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

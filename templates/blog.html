@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}{{ content.blog.title if content.blog else 'Blog - Casos de Sucesso' }} - Galeleo{% endblock %}
+
+{% block content %}
+<!-- Blog Header -->
+<section class="blog-header-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="blog-title" data-aos="fade-up">
+                    {{ content.blog.title if content.blog else 'Casos de Sucesso' }}
+                </h1>
+                <p class="blog-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    {{ content.blog.subtitle if content.blog else 'Descubra como transformamos desafios complexos em soluções inovadoras através da tecnologia' }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Posts -->
+<section class="blog-posts-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Veredas Post -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <article class="blog-post-card h-100">
+                    <div class="post-image">
+                        <img src="https://pixabay.com/get/g6927d1cb78fdba84ff4007bc137ab975b836916d16852f1815e06c6743152da047d8ca5f1a7b911ebee49e6f92807d193fc1061d655e03e14a4b21de055b4029_1280.jpg" 
+                             alt="Protocolo Veredas" class="img-fluid">
+                        <div class="post-category health">
+                            {{ content.blog.veredas.category if content.blog else 'Saúde' }}
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                {{ content.blog.veredas.date if content.blog else '2024' }}
+                            </span>
+                            <span class="post-reading-time">
+                                <i class="fas fa-clock me-1"></i>
+                                {{ content.blog.veredas.reading_time if content.blog else '5 min' }}
+                            </span>
+                        </div>
+                        <h3 class="post-title">
+                            {{ content.blog.veredas.title if content.blog else 'Protocolo Veredas: Revolucionando o Tratamento de Parkinson' }}
+                        </h3>
+                        <p class="post-excerpt">
+                            {{ content.blog.veredas.excerpt if content.blog else 'Uma plataforma moderna e humanizada voltada ao monitoramento de pacientes com doenças neurodegenerativas, desenvolvida com 16 anos de experiência clínica e tecnologia de ponta.' }}
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">IA Médica</span>
+                            <span class="tag">Neurologia</span>
+                            <span class="tag">Monitoramento</span>
+                        </div>
+                        <a href="{{ url_for('case_study', case_name='veredas', lang=lang) }}" class="btn btn-primary">
+                            {{ content.blog.read_more if content.blog else 'Ler Mais' }}
+                            <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Veras Post -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <article class="blog-post-card h-100">
+                    <div class="post-image">
+                        <img src="https://pixabay.com/get/ga0b836995506830fb17c4d941aed0ab9c7277c7a3c762e0243698047c41468ba409da144f711d1d54b4cbf61a02d11b715bdac25c2a6da838aff0e66f29dd353_1280.jpg" 
+                             alt="Plataforma Veras" class="img-fluid">
+                        <div class="post-category wellness">
+                            {{ content.blog.veras.category if content.blog else 'Bem-estar' }}
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                {{ content.blog.veras.date if content.blog else '2024' }}
+                            </span>
+                            <span class="post-reading-time">
+                                <i class="fas fa-clock me-1"></i>
+                                {{ content.blog.veras.reading_time if content.blog else '4 min' }}
+                            </span>
+                        </div>
+                        <h3 class="post-title">
+                            {{ content.blog.veras.title if content.blog else 'Veras: Plataforma de Bem-estar Mental com IA' }}
+                        </h3>
+                        <p class="post-excerpt">
+                            {{ content.blog.veras.excerpt if content.blog else 'Uma plataforma de bem-estar emocional que oferece suporte através de agentes de IA empáticos, criando um espaço seguro para crescimento pessoal e saúde mental.' }}
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">IA Conversacional</span>
+                            <span class="tag">Saúde Mental</span>
+                            <span class="tag">Terapia Digital</span>
+                        </div>
+                        <a href="{{ url_for('case_study', case_name='veras', lang=lang) }}" class="btn btn-primary">
+                            {{ content.blog.read_more if content.blog else 'Ler Mais' }}
+                            <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- HydroApp Post -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <article class="blog-post-card h-100">
+                    <div class="post-image">
+                        <img src="https://pixabay.com/get/gcbff7779f5128a8bfd6885a9838d5c2876cb19f59dfa8552001ba294bd9db8ec8feddbb189431aa64594bc4597ddc5ed0fac94e690ea52df0cfc57f8eab65520_1280.jpg" 
+                             alt="HydroApp System" class="img-fluid">
+                        <div class="post-category utilities">
+                            {{ content.blog.hydroapp.category if content.blog else 'Utilities' }}
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                {{ content.blog.hydroapp.date if content.blog else '2024' }}
+                            </span>
+                            <span class="post-reading-time">
+                                <i class="fas fa-clock me-1"></i>
+                                {{ content.blog.hydroapp.reading_time if content.blog else '6 min' }}
+                            </span>
+                        </div>
+                        <h3 class="post-title">
+                            {{ content.blog.hydroapp.title if content.blog else 'HydroApp: Gestão Inteligente de Recursos Hídricos' }}
+                        </h3>
+                        <p class="post-excerpt">
+                            {{ content.blog.hydroapp.excerpt if content.blog else 'Sistema revolucionário que combina IoT e IA para automatizar a gestão de água e gás em condomínios, oferecendo monitoramento em tempo real e economia significativa.' }}
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Smart Cities</span>
+                            <span class="tag">Automação</span>
+                        </div>
+                        <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-primary">
+                            {{ content.blog.read_more if content.blog else 'Ler Mais' }}
+                            <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog CTA -->
+<section class="blog-cta-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="cta-title mb-4">
+                    {{ content.blog.cta.title if content.blog and content.blog.cta else 'Tem um Projeto em Mente?' }}
+                </h2>
+                <p class="cta-subtitle mb-4">
+                    {{ content.blog.cta.subtitle if content.blog and content.blog.cta else 'Vamos conversar sobre como podemos transformar sua ideia em uma solução inovadora' }}
+                </p>
+                <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    {{ content.blog.cta.button if content.blog and content.blog.cta else 'Iniciar Projeto' }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

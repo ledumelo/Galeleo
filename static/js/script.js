@@ -271,15 +271,25 @@
                     if (entry.isIntersecting) {
                         const img = entry.target;
                         
-                        img.addEventListener('load', function() {
-                            this.style.opacity = '1';
-                            this.style.transform = 'scale(1)';
-                        });
+                        // Check if image is already loaded (cached)
+                        const isImageLoaded = img.complete && img.naturalWidth > 0;
                         
-                        // Add loading transition
-                        img.style.opacity = '0';
-                        img.style.transform = 'scale(0.95)';
-                        img.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        if (isImageLoaded) {
+                            // Image is already loaded - show it immediately
+                            img.style.opacity = '1';
+                            img.style.transform = 'scale(1)';
+                            img.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        } else {
+                            // Image not loaded yet - add loading transition
+                            img.addEventListener('load', function() {
+                                this.style.opacity = '1';
+                                this.style.transform = 'scale(1)';
+                            });
+                            
+                            img.style.opacity = '0';
+                            img.style.transform = 'scale(0.95)';
+                            img.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        }
                         
                         imageObserver.unobserve(img);
                     }

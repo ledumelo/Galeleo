@@ -2,6 +2,21 @@
 
 {% block title %}{{ content.cases.veras.title if content.cases else 'Veras - Plataforma de Bem-estar Mental com IA' }} - Galeleo{% endblock %}
 
+{% block head %}
+<!-- SEO tags Plataforma Veras -->
+{% if lang == 'pt' %}
+<meta name="description" content="Plataforma Veras: solução inovadora de assistente virtual inteligente para saúde mental, oferecendo suporte emocional personalizado, seguro e baseado em evidências científicas para promover bem-estar e qualidade de vida.">
+<meta name="keywords" content="saúde mental, bem-estar emocional, Plataforma Veras, assistente virtual emocional, Galeleo, tecnologia em saúde mental, IA terapêutica, suporte psicológico digital, terapia assistida por IA, apoio emocional, psicologia tecnológica, ambiente seguro para expressão emocional">
+{% elif lang == 'en' %}
+<meta name="description" content="Veras Platform: innovative intelligent virtual assistant solution for mental health, offering personalized, secure and evidence-based emotional support to promote well-being and quality of life.">
+<meta name="keywords" content="mental health, emotional wellness, Veras Platform, emotional virtual assistant, Galeleo, mental health technology, therapeutic AI, digital psychological support, AI-assisted therapy, emotional support, technological psychology, safe environment for emotional expression">
+{% elif lang == 'es' %}
+<meta name="description" content="Plataforma Veras: solución innovadora de asistente virtual inteligente para salud mental, ofreciendo apoyo emocional personalizado, seguro y basado en evidencia científica para promover bienestar y calidad de vida.">
+<meta name="keywords" content="salud mental, bienestar emocional, Plataforma Veras, asistente virtual emocional, Galeleo, tecnología en salud mental, IA terapéutica, apoyo psicológico digital, terapia asistida por IA, apoyo emocional, psicología tecnológica, ambiente seguro para expresión emocional">
+{% endif %}
+<meta name="robots" content="index,follow">
+{% endblock %}
+
 {% block content %}
 <!-- Case Header -->
 <section class="case-header-section">
@@ -62,6 +77,16 @@
                     <p>
                         {{ content.cases.veras.solution if content.cases else 'Desenvolvemos uma plataforma que democratiza o acesso ao suporte emocional através de agentes de IA especializados em diferentes condições mentais. A solução oferece monitoramento contínuo do estado emocional, intervenção em crises e conexão com profissionais licenciados quando necessário.' }}
                     </p>
+                </div>
+
+                <!-- Commitment -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.veras.commitment_title if content.cases else 'Nosso Compromisso' }}</h3>
+                    <div class="commitment-content p-4 bg-light rounded-3">
+                        <p class="lead text-center mb-0">
+                            <em>{{ content.cases.veras.commitment if content.cases else 'Acreditamos no poder transformador da tecnologia quando aliada à empatia e ao cuidado humano. Cada interação na Plataforma Veras é uma oportunidade de fazer a diferença na vida de alguém, promovendo bem-estar emocional e construindo um futuro mais saudável e equilibrado para todos.' }}</em>
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Features -->
@@ -183,27 +208,13 @@
     </div>
 </section>
 
-<!-- Case CTA -->
-<section class="case-cta-section py-5">
+<!-- Case Footer -->
+<section class="case-footer-section py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                <h2 class="cta-title mb-4">
-                    {{ content.cases.veras.cta_title if content.cases else 'Precisa de uma Plataforma de Bem-estar?' }}
-                </h2>
-                <p class="cta-subtitle mb-4">
-                    {{ content.cases.veras.cta_subtitle if content.cases else 'Vamos desenvolver uma solução de saúde mental personalizada para sua organização ou comunidade' }}
-                </p>
-                <div class="cta-buttons">
-                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg me-3">
-                        <i class="fas fa-heart me-2"></i>
-                        {{ content.cases.veras.cta_contact if content.cases else 'Criar Solução de Bem-estar' }}
-                    </a>
-                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-arrow-left me-2"></i>
-                        {{ content.cases.veras.cta_back if content.cases else 'Voltar ao Blog' }}
-                    </a>
-                </div>
+                <p class="mb-2">© 2024 Plataforma Veras. Desenvolvido com empatia e inovação pela Galeleo.</p>
+                <p class="mb-0">Inspirado no trabalho pioneiro da <a href="https://veras.app.br/" target="_blank" class="text-primary text-decoration-none">Veras</a></p>
             </div>
         </div>
     </div>

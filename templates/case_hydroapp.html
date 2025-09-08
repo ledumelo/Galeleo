@@ -2,6 +2,21 @@
 
 {% block title %}{{ content.cases.hydroapp.title if content.cases else 'HydroApp - Gestão Inteligente de Recursos Hídricos' }} - Galeleo{% endblock %}
 
+{% block head %}
+<!-- SEO tags HydroApp -->
+{% if lang == 'pt' %}
+<meta name="description" content="HydroApp: sistema revolucionário de gestão inteligente de água e gás para condomínios, utilizando IoT e leituras fotométricas automatizadas para monitoramento em tempo real, economia de recursos e sustentabilidade ambiental.">
+<meta name="keywords" content="HydroApp, gestão inteligente de água, monitoramento de gás, IoT em condomínios, Galeleo, tecnologia sustentável, economia de recursos hídricos, smart building, automação predial, leituras fotométricas, alertas em tempo real, gestão de utilities, sustentabilidade ambiental, economia de recursos naturais">
+{% elif lang == 'en' %}
+<meta name="description" content="HydroApp: revolutionary intelligent water and gas management system for condominiums, using IoT and automated photometric readings for real-time monitoring, resource savings and environmental sustainability.">
+<meta name="keywords" content="HydroApp, intelligent water management, gas monitoring, IoT in condominiums, Galeleo, sustainable technology, water resource savings, smart building, building automation, photometric readings, real-time alerts, utility management, environmental sustainability, natural resource savings">
+{% elif lang == 'es' %}
+<meta name="description" content="HydroApp: sistema revolucionario de gestión inteligente de agua y gas para condominios, utilizando IoT y lecturas fotométricas automatizadas para monitoreo en tiempo real, ahorro de recursos y sostenibilidad ambiental.">
+<meta name="keywords" content="HydroApp, gestión inteligente de agua, monitoreo de gas, IoT en condominios, Galeleo, tecnología sostenible, ahorro de recursos hídricos, smart building, automatización predial, lecturas fotométricas, alertas en tiempo real, gestión de servicios públicos, sostenibilidad ambiental, ahorro de recursos naturales">
+{% endif %}
+<meta name="robots" content="index,follow">
+{% endblock %}
+
 {% block content %}
 <!-- Case Header -->
 <section class="case-header-section">
@@ -62,6 +77,16 @@
                     <p>
                         {{ content.cases.hydroapp.solution if content.cases else 'Desenvolvemos um sistema completo que combina sensores IoT inteligentes, processamento de dados em tempo real e IA preditiva. A solução oferece leituras automáticas precisas, alertas imediatos de vazamentos, análise de padrões de consumo e dashboard intuitivo para gestão completa dos recursos.' }}
                     </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.hydroapp.mission_title if content.cases else 'Nossa Missão' }}</h3>
+                    <div class="mission-content p-4 bg-light rounded-3">
+                        <p class="lead text-center mb-0">
+                            <em>{{ content.cases.hydroapp.mission if content.cases else 'Transformar a gestão de recursos em condomínios através da tecnologia, promovendo sustentabilidade e eficiência. Cada gota economizada é um passo em direção a um futuro mais consciente e sustentável para todos.' }}</em>
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Features -->
@@ -198,27 +223,13 @@
     </div>
 </section>
 
-<!-- Case CTA -->
-<section class="case-cta-section py-5">
+<!-- Case Footer -->
+<section class="case-footer-section py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                <h2 class="cta-title mb-4">
-                    {{ content.cases.hydroapp.cta_title if content.cases else 'Quer Implementar Gestão Inteligente?' }}
-                </h2>
-                <p class="cta-subtitle mb-4">
-                    {{ content.cases.hydroapp.cta_subtitle if content.cases else 'Vamos desenvolver uma solução IoT personalizada para automatizar a gestão de recursos em seu empreendimento' }}
-                </p>
-                <div class="cta-buttons">
-                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg me-3">
-                        <i class="fas fa-cogs me-2"></i>
-                        {{ content.cases.hydroapp.cta_contact if content.cases else 'Solicitar Demonstração' }}
-                    </a>
-                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-arrow-left me-2"></i>
-                        {{ content.cases.hydroapp.cta_back if content.cases else 'Voltar ao Blog' }}
-                    </a>
-                </div>
+                <p class="mb-2">© 2024 HydroApp. Desenvolvido com inovação e sustentabilidade pela Galeleo.</p>
+                <p class="mb-0">Inspirado no trabalho pioneiro do <a href="https://hydro-app.replit.app/" target="_blank" class="text-primary text-decoration-none">HydroApp</a></p>
             </div>
         </div>
     </div>

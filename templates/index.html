@@ -13,9 +13,9 @@
                     <!-- Galeleo Logo -->
                     <div class="hero-logo mb-4" data-aos="fade-right">
                         <img src="{{ url_for('static', filename='images/galeleo-logo.png') }}"
-                             alt="Galeleo Logo" 
-                             class="logo-hero" 
-                             height="80">
+                             alt="Galeleo Logo"
+                             class="logo-hero"
+                             height="200">
                     </div>
                     <h1 class="hero-title mb-4">
                         {{ content.hero.title if content.hero else 'Transformando Ideias em Soluções Inteligentes' }}
@@ -37,7 +37,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-                    <img src="https://pixabay.com/get/g42034c582afa4ab2118339d2a8d2284bb69b534fedf411b6ae0061de1026e951f05ef6e0e9211b1e6b3d87fbbebfa933a4e907ab33607f243e52cdbbfaf02b2f_1280.png" 
+                    <img src="https://pixabay.com/get/g42034c582afa4ab2118339d2a8d2284bb69b534fedf411b6ae0061de1026e951f05ef6e0e9211b1e6b3d87fbbebfa933a4e907ab33607f243e52cdbbfaf02b2f_1280.png"
                          alt="AI Technology" class="img-fluid rounded-3 shadow-lg">
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="row g-4">
             <!-- Video Coding -->
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -69,12 +69,12 @@
                     <h4>{{ content.services.video_coding.title if content.services else 'Video Coding' }}</h4>
                     <p>{{ content.services.video_coding.description if content.services else 'Otimização de entregas com alta qualidade através de técnicas avançadas de codificação e processamento de vídeo' }}</p>
                     <div class="service-features">
-                        <img src="https://pixabay.com/get/g093bb10c9db2b677deb127fbdedb3f8c019c0d17f203f523a2276ed1a765dc4c2a421f6e0cd9e83361b0c847f663f99278f350d3b39f3b134aa8ed1f02730bee_1280.jpg" 
+                        <img src="https://pixabay.com/get/g093bb10c9db2b677deb127fbdedb3f8c019c0d17f203f523a2276ed1a765dc4c2a421f6e0cd9e83361b0c847f663f99278f350d3b39f3b134aa8ed1f02730bee_1280.jpg"
                              alt="Video Coding" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
-            
+
             <!-- AI Agents -->
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card h-100">
@@ -82,25 +82,25 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <h4>{{ content.services.ai_agents.title if content.services else 'Agentes de IA' }}</h4>
-                    <p>{{ content.services.ai_agents.description if content.services else 'Criação de assistentes inteligentes autônomos que revolucionam a interação humano-máquina em diversos setores' }}</p>
+                    <p>{{ content.services.ai_agents.description if content.services else 'Criação de agentes inteligentes personalizados para automatizar processos e melhorar a experiência do usuário' }}</p>
                     <div class="service-features">
-                        <img src="https://pixabay.com/get/g4f8e1b2db3b53c5ed3b3b80a21b9b8c9ae9a0b0c14b7b5b3f7b8b0b9d6b3c8b3a_1280.jpg" 
+                        <img src="https://pixabay.com/get/g5c07da69eedb8a38634266cd418faf7c099b8758983db95ccbcb1004e1dc8b21465ce57828451690fe385983859eaf2ad5012be9aea523028689ce91d7d6a849_1280.jpg"
                              alt="AI Agents" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
-            
-            <!-- Multi-Platform Integration -->
+
+            <!-- Multi-platform Integrations -->
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-card h-100">
                     <div class="service-icon">
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <h4>{{ content.services.integrations.title if content.services else 'Integrações Multi-plataformas' }}</h4>
-                    <p>{{ content.services.integrations.description if content.services else 'Conectamos sistemas heterogêneos com eficiência máxima, garantindo escalabilidade e performance em ambientes complexos' }}</p>
+                    <p>{{ content.services.integrations.description if content.services else 'Desenvolvimento de soluções escaláveis que conectam diferentes sistemas e plataformas de forma eficiente' }}</p>
                     <div class="service-features">
-                        <img src="https://pixabay.com/get/g7a5c8b3e1b9b9c1f5c5b0a9c2b1b3d7a8e0a1c8b5d3e9f0b2a7c6e4b8d1f3a9_1280.jpg" 
-                             alt="Multi-Platform Integration" class="img-fluid rounded">
+                        <img src="https://pixabay.com/get/g3acad89a550e72c41c1b0dd5b52d385dad0dc5b137a6b5ab55f7942a3e5f1c41a5d945a5ecd55a6552fc6b253ebf99721db9f48421db63ab7963f1ff66a549b3_1280.jpg"
+                             alt="Multi-platform" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -108,42 +108,46 @@
     </div>
 </section>
 
-<!-- About Section -->
-<section class="about-section py-5 bg-light">
+<!-- Experience Section -->
+<section class="experience-section py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6" data-aos="fade-right">
                 <h2 class="section-title">
                     {{ content.experience.title if content.experience else 'Mais de 40 Anos de Experiência' }}
                 </h2>
-                <p class="lead mb-4">
-                    {{ content.experience.description if content.experience else 'Desde 1983, a Galeleo tem sido pioneira no desenvolvimento de soluções tecnológicas avançadas. Nossa jornada começou com sistemas de processamento de dados e evoluiu para as fronteiras mais avançadas da inteligência artificial e integração de sistemas.' }}
+                <p class="mb-4">
+                    {{ content.experience.description if content.experience else 'Desde 1983, atuo como consultor em tecnologia da informação, sempre buscando soluções inovadoras para desafios complexos. Em 1992, fundei a Galeleo para atender de forma mais estruturada empresas de diversos segmentos.' }}
                 </p>
-                <div class="row g-3">
+                <p class="mb-4">
+                    {{ content.experience.current_focus if content.experience else 'Hoje, minha atuação é focada em video coding, criação de agentes de IA e integrações multi-plataformas, viabilizando projetos altamente escaláveis com eficiência operacional e custos competitivos.' }}
+                </p>
+
+                <div class="row text-center mt-4">
                     <div class="col-6">
-                        <div class="stat-card">
+                        <div class="stat-item">
                             <h3 class="stat-number">40+</h3>
                             <p class="stat-label">{{ content.experience.years_experience if content.experience else 'Anos de Experiência' }}</p>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="stat-card">
-                            <h3 class="stat-number">200+</h3>
-                            <p class="stat-label">{{ 'Projetos Entregues' }}</p>
+                        <div class="stat-item">
+                            <h3 class="stat-number">30+</h3>
+                            <p class="stat-label">{{ content.experience.years_galeleo if content.experience else 'Anos da Galeleo' }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="https://pixabay.com/get/g1b5c2e9f8b8a9d2f1b8c7a5e9f3b2a8c1d4f0e6b9a3c8f2d5e1b7a9c4f6b8_1280.jpg" 
-                     alt="About Galeleo" class="img-fluid rounded-3 shadow">
+                <img src="https://pixabay.com/get/g9a2d6b7073189155d2ee48164355f4a67260a6130531e3caba5f07975d2fa2282532e139f7ca3afc2793170921672dda2381711d8282906be491dea78a6c8a45_1280.jpg"
+                     alt="Professional Experience" class="img-fluid rounded-3 shadow">
             </div>
         </div>
     </div>
 </section>
 
-<!-- Case Studies Preview -->
-<section class="case-studies-section py-5">
+<!-- Featured Cases Section -->
+<section class="featured-cases-section py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
@@ -151,121 +155,86 @@
                     {{ content.cases.title if content.cases else 'Casos de Sucesso' }}
                 </h2>
                 <p class="section-subtitle">
-                    {{ content.cases.subtitle if content.cases else 'Conheça alguns de nossos projetos mais impactantes que transformaram setores inteiros através da tecnologia' }}
+                    {{ content.cases.subtitle if content.cases else 'Conheça alguns dos projetos inovadores que desenvolvemos utilizando inteligência artificial e tecnologias avançadas' }}
                 </p>
             </div>
         </div>
-        
+
         <div class="row g-4">
-            <!-- Veredas Case Study -->
+            <!-- Veredas Case -->
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="case-study-card h-100">
+                <div class="case-card h-100">
                     <div class="case-image">
-                        <img src="https://pixabay.com/get/g8b5a2c1f9d7e3b4a6c8f1e5d2b7a9c4f0e6b3a8d5f2c1e7b4a9f6c3e8b1a5_1280.jpg" 
-                             alt="Protocolo Veredas" class="img-fluid">
+                        <img src="https://pixabay.com/get/g6927d1cb78fdba84ff4007bc137ab975b836916d16852f1815e06c6743152da047d8ca5f1a7b911ebee49e6f92807d193fc1061d655e03e14a4b21de055b4029_1280.jpg"
+                             alt="Veredas Platform" class="img-fluid">
+                        <div class="case-category">{{ content.cases.veredas.category if content.cases else 'Saúde' }}</div>
                     </div>
                     <div class="case-content">
-                        <span class="case-category">{{ content.cases.veredas.category if content.cases else 'Saúde Digital' }}</span>
-                        <h3>{{ content.cases.veredas.title if content.cases else 'Protocolo Veredas' }}</h3>
-                        <p>{{ content.cases.veredas.description if content.cases else 'Plataforma revolucionária para tratamento de Parkinson com IA avançada, melhorando a qualidade de vida de milhares de pacientes.' }}</p>
-                        <a href="{{ url_for('case_study', case_name='veredas', lang=lang) }}" class="btn btn-outline-primary">
-                            {{ content.cases.read_more if content.cases else 'Leia Mais' }}
+                        <h4>{{ content.cases.veredas.title if content.cases else 'Veredas: Revolucionando o Tratamento de Parkinson' }}</h4>
+                        <p>{{ content.cases.veredas.description if content.cases else 'Sistema inovador que integra monitoramento remoto, exercícios personalizados e IA para otimizar o tratamento de Parkinson, melhorando significativamente a qualidade de vida dos pacientes.' }}</p>
+                        <a href="{{ url_for('case_study', case_name='veredas', lang=lang) }}" class="btn btn-primary">
+                            {{ content.cases.read_more if content.cases else 'Ler Mais' }}
                         </a>
                     </div>
                 </div>
             </div>
-            
-            <!-- Veras Case Study -->
+
+            <!-- Veras Case -->
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="case-study-card h-100">
+                <div class="case-card h-100">
                     <div class="case-image">
-                        <img src="https://pixabay.com/get/ga8c3f1e2b9d5a7c4f0e8b6a3d1f7c2e9b4a8f5d0c6e3a7b1f9c4e8a2d5f0b6_1280.jpg" 
+                        <img src="https://pixabay.com/get/ga0b836995506830fb17c4d941aed0ab9c7277c7a3c762e0243698047c41468ba409da144f711d1d54b4cbf61a02d11b715bdac25c2a6da838aff0e66f29dd353_1280.jpg"
                              alt="Veras Platform" class="img-fluid">
+                        <div class="case-category">{{ content.cases.veras.category if content.cases else 'Bem-estar' }}</div>
                     </div>
                     <div class="case-content">
-                        <span class="case-category">{{ content.cases.veras.category if content.cases else 'Bem-estar Mental' }}</span>
-                        <h3>{{ content.cases.veras.title if content.cases else 'Plataforma Veras' }}</h3>
-                        <p>{{ content.cases.veras.description if content.cases else 'Assistente de IA para bem-estar mental com algoritmos avançados de análise comportamental e suporte personalizado.' }}</p>
-                        <a href="{{ url_for('case_study', case_name='veras', lang=lang) }}" class="btn btn-outline-primary">
-                            {{ content.cases.read_more if content.cases else 'Leia Mais' }}
+                        <h4>{{ content.cases.veras.title if content.cases else 'Veras: Seu Companheiro de Bem-estar Mental' }}</h4>
+                        <p>{{ content.cases.veras.description if content.cases else 'Plataforma inteligente que combina terapia cognitivo-comportamental com IA para oferecer suporte emocional personalizado e acompanhamento contínuo do bem-estar mental.' }}</p>
+                        <a href="{{ url_for('case_study', case_name='veras', lang=lang) }}" class="btn btn-primary">
+                            {{ content.cases.read_more if content.cases else 'Ler Mais' }}
                         </a>
                     </div>
                 </div>
             </div>
-            
-            <!-- HydroApp Case Study -->
+
+            <!-- HydroApp Case -->
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="case-study-card h-100">
+                <div class="case-card h-100">
                     <div class="case-image">
-                        <img src="https://pixabay.com/get/g2b7c9f3e1a4d8b5c0f6a9e2d7c1f4b8a3e6d0c5a8f3b7e1c4d9a6f2b5e8c0_1280.jpg" 
-                             alt="HydroApp" class="img-fluid">
+                        <img src="https://pixabay.com/get/gcbff7779f5128a8bfd6885a9838d5c2876cb19f59dfa8552001ba294bd9db8ec8feddbb189431aa64594bc4597ddc5ed0fac94e690ea52df0cfc57f8eab65520_1280.jpg"
+                             alt="HydroApp Platform" class="img-fluid">
+                        <div class="case-category">{{ content.cases.hydroapp.category if content.cases else 'Utilities' }}</div>
                     </div>
                     <div class="case-content">
-                        <span class="case-category">{{ content.cases.hydroapp.category if content.cases else 'IoT & Sustentabilidade' }}</span>
-                        <h3>{{ content.cases.hydroapp.title if content.cases else 'HydroApp' }}</h3>
-                        <p>{{ content.cases.hydroapp.description if content.cases else 'Sistema inteligente de gestão de água e gás com IoT, promovendo uso consciente de recursos naturais.' }}</p>
-                        <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-outline-primary">
-                            {{ content.cases.read_more if content.cases else 'Leia Mais' }}
+                        <h4>{{ content.cases.hydroapp.title if content.cases else 'HydroApp: Gestão Inteligente de Recursos' }}</h4>
+                        <p>{{ content.cases.hydroapp.description if content.cases else 'Sistema revolucionário que automatiza a gestão de água e gás em condomínios, utilizando IA para monitoramento em tempo real e redução significativa de custos.' }}</p>
+                        <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-primary">
+                            {{ content.cases.read_more if content.cases else 'Ler Mais' }}
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="text-center mt-5" data-aos="fade-up">
-            <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-primary btn-lg">
-                <i class="fas fa-book-open me-2"></i>
-                {{ 'Ver Todos os Casos' }}
-            </a>
         </div>
     </div>
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section py-5 bg-primary text-white">
+<section class="cta-section py-5">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8" data-aos="fade-right">
-                <h2 class="mb-3">{{ 'Pronto para Transformar Sua Ideia em Realidade?' }}</h2>
-                <p class="lead mb-0">{{ 'Entre em contato conosco e descubra como podemos acelerar seu projeto com nossa experiência de 40+ anos em tecnologia de ponta.' }}</p>
-            </div>
-            <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-light btn-lg">
-                    <i class="fas fa-comments me-2"></i>
-                    {{ 'Fale Conosco' }}
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="cta-title mb-4">
+                    {{ content.cta.title if content.cta else 'Vamos Transformar Sua Ideia em Realidade' }}
+                </h2>
+                <p class="cta-subtitle mb-4">
+                    {{ content.cta.subtitle if content.cta else 'Entre em contato e descubra como nossas soluções de IA podem revolucionar seu negócio' }}
+                </p>
+                <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>
+                    {{ content.cta.button if content.cta else 'Enviar Mensagem' }}
                 </a>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Floating Button to Footer -->
-<div id="floating-footer-btn" class="floating-footer-btn" title="{{ 'Ir para o Rodapé' }}">
-    <i class="fas fa-arrow-down"></i>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Floating button to footer
-    const floatingBtn = document.getElementById('floating-footer-btn');
-    const footer = document.querySelector('footer');
-    
-    if (floatingBtn && footer) {
-        floatingBtn.addEventListener('click', function() {
-            footer.scrollIntoView({ behavior: 'smooth' });
-        });
-        
-        // Show/hide button based on scroll position
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 300) {
-                floatingBtn.style.opacity = '1';
-                floatingBtn.style.pointerEvents = 'all';
-            } else {
-                floatingBtn.style.opacity = '0';
-                floatingBtn.style.pointerEvents = 'none';
-            }
-        });
-    }
-});
-</script>
 {% endblock %}

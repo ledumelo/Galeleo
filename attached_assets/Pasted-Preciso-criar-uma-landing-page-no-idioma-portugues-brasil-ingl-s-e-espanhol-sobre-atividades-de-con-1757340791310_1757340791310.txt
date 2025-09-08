@@ -1,0 +1,13 @@
+Preciso criar uma landing page no idioma portugues brasil, inglês e espanhol sobre atividades de consultor em tecnologia da informação que realizo desde 1983. A empresa Galeleo foi criada em 1992 para poder atender de forma mais estruturada empresas de diversos segmentos. Hoje, minha atuação é focada em vide coding buscando otimizar entregas com alta qualidade e eficiência operacional a custos altamente competitivos. Atuando fortemente com criação de agentes de IA e integrações multi-plataformas, viabilizo projetos altamente escaláveis. 
+
+
+Gostaria de uma landing de uma pagina, “sem estatisticas”, “sem depoimentos”, porém com forte apelo visual moderno e sofisticado use como padrão https://readdy.link/share/adcfed014b06a3e0f0e9aad44e91e599 podendo inclusive copiar o design. 
+
+
+Conectado a landing teria uma estrutura de  blog que irá aumentar conforme os casos de uso forem sendo disponibilizados e onde colocarei para começar três casos de sucesso, o primeiro uma plataforma para atender a uma cientista que atua no tratamento de pacientes de parkinson a 16 anos, o segundo caso de uso é uma plataforma de bem-estar mental que oferece suporte emocional através de um agente de IA acolhedor, criando um espaço seguro para sua jornada pessoal, terceiro caso de uso, uma plataforma com uso de ia na gestão de água e gás de condomínios com leituras fotométricas automatizadas, alertas em tempo real e economia garantida. 
+
+
+Preciso que faça o copywriter da landing e do blog. Estão anexos link para ajudar no desenvolvimento do texto para os casos de uso (Primeiro caso - https://ledumelo.com.br/veredas/ - Segundo caso - https://ledumelo.com.br/veras/ - Terceiro caso https://ledumelo.com.br/hydroapp/). Anexo o logotipo da empresa. Use o logotipo anexo como cores de base para a landing incorporando laranja escuro, amarelo, e verde claro. Use html5, bootstrap, javascript. Procure não usar outras linguagens como react, typescript, php, python entre outras. A landing precisa ser totalmente responsiva.
+
+
+Crie toda estrutura de paginas, hiperlinks, blog e fale conosco.

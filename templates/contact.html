@@ -37,7 +37,7 @@
                 {% endwith %}
                 
                 <div class="contact-form-card" data-aos="fade-up">
-                    <form method="POST" class="contact-form">
+                    <form action="https://formspree.io/f/mnnblgaw" method="POST" class="contact-form">
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -102,6 +102,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Campo honeypot para evitar spam -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary btn-lg w-100">
                                     <i class="fas fa-paper-plane me-2"></i>
@@ -137,7 +140,7 @@
                     </div>
                     <h4>{{ content.contact.info.phone_title if content.contact else 'Telefone' }}</h4>
                     <p class="mb-2">{{ content.contact.info.phone_desc if content.contact else 'Ligue para uma conversa direta:' }}</p>
-                    <a href="tel:+5561991705679" class="contact-link">+55 (61) 9 9170-5679</a>
+                    <a href="tel:+5511947347125" class="contact-link">+55 (11) 94734-7125</a>
                 </div>
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">

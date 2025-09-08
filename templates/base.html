@@ -93,11 +93,11 @@
                     <h6>{{ content.footer.contact_title if content.footer else 'Contato' }}</h6>
                     <p class="text-muted mb-1">
                         <i class="fas fa-envelope me-2"></i>
-                        contato@galeleo.com.br
+                        <a href="{{ url_for('contact', lang=lang) }}" class="text-muted text-decoration-none">contato@galeleo.com.br</a>
                     </p>
                     <p class="text-muted">
                         <i class="fas fa-phone me-2"></i>
-                        +55 (61) 9 9170-5679
+                        +55 (11) 94734-7125
                     </p>
                 </div>
             </div>

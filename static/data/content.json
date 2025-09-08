@@ -123,6 +123,8 @@
         "challenge": "A gestão tradicional de recursos em condomínios enfrenta problemas como leituras manuais imprecisas, fraudes em medidores, detecção tardia de vazamentos, altos custos operacionais e dificuldade no controle de consumo. Esses fatores resultam em desperdício significativo e custos elevados para os moradores.",
         "solution_title": "Nossa Solução",
         "solution": "Desenvolvemos um sistema completo que combina sensores IoT inteligentes, processamento de dados em tempo real e IA preditiva. A solução oferece leituras automáticas precisas, alertas imediatos de vazamentos, análise de padrões de consumo e dashboard intuitivo para gestão completa dos recursos.",
+        "mission_title": "Nossa Missão",
+        "mission": "Transformar a gestão de recursos em condomínios através da tecnologia, promovendo sustentabilidade e eficiência. Cada gota economizada é um passo em direção a um futuro mais consciente e sustentável para todos.",
         "features_title": "Principais Funcionalidades",
         "feature1_title": "Leitura Fotométrica",
         "feature1_desc": "Sensores inteligentes que capturam leituras precisas automaticamente",

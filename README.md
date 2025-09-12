@@ -69,7 +69,7 @@ Uma landing page multilíngue (Português, Inglês, Espanhol) para a empresa de 
 ### Casos de Estudo Detalhados
 1. **Protocolo Veredas** (`/case/veredas`)
    - Plataforma para tratamento de Parkinson
-   - 16+ anos de desenvolvimento
+   - 30+ anos de desenvolvimento
    - IA para insights médicos
    
 2. **Plataforma Veras** (`/case/veras`)

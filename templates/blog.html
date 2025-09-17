@@ -27,7 +27,7 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
-                        <img src="https://pixabay.com/get/g6927d1cb78fdba84ff4007bc137ab975b836916d16852f1815e06c6743152da047d8ca5f1a7b911ebee49e6f92807d193fc1061d655e03e14a4b21de055b4029_1280.jpg" 
+                        <img src="{{ url_for('static', filename='images/img_sessao_4_1.jpg') }}" 
                              alt="Protocolo Veredas" class="img-fluid">
                         <div class="post-category health">
                             {{ content.blog.veredas.category if content.blog else 'Saúde' }}
@@ -67,7 +67,7 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
-                        <img src="https://pixabay.com/get/ga0b836995506830fb17c4d941aed0ab9c7277c7a3c762e0243698047c41468ba409da144f711d1d54b4cbf61a02d11b715bdac25c2a6da838aff0e66f29dd353_1280.jpg" 
+                        <img src="{{ url_for('static', filename='images/img_sessao_4_2.jpg') }}" 
                              alt="Plataforma Veras" class="img-fluid">
                         <div class="post-category wellness">
                             {{ content.blog.veras.category if content.blog else 'Bem-estar' }}
@@ -107,7 +107,7 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
-                        <img src="https://pixabay.com/get/gcbff7779f5128a8bfd6885a9838d5c2876cb19f59dfa8552001ba294bd9db8ec8feddbb189431aa64594bc4597ddc5ed0fac94e690ea52df0cfc57f8eab65520_1280.jpg" 
+                        <img src="{{ url_for('static', filename='images/img_sessao_4_3.jpg') }}" 
                              alt="HydroApp System" class="img-fluid">
                         <div class="post-category utilities">
                             {{ content.blog.hydroapp.category if content.blog else 'Utilities' }}

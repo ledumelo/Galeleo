@@ -171,7 +171,7 @@ gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 
 ## 📝 Licença
 
-© 2024 Galeleo. Todos os direitos reservados.
+© 2026-2028 Galeleo. Todos os direitos reservados.
 
 ---
 

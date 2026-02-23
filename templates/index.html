@@ -2,6 +2,20 @@
 
 {% block title %}{{ content.hero.title if content.hero else 'Galeleo - Transformando Ideias em Soluções Inteligentes' }}{% endblock %}
 
+{% block extra_head %}
+{% if lang == 'pt' %}
+<meta name="description" content="Galeleo - Consultoria em tecnologia desde 1983. Especialistas em Vibe Coding, Agentes de IA e Integrações Multi-plataformas. Transformando ideias em soluções inteligentes com mais de 40 anos de experiência.">
+<meta name="keywords" content="Galeleo, consultoria em tecnologia, Vibe Coding, agentes de IA, integrações multi-plataformas, desenvolvimento de software, inteligência artificial, automação, inovação tecnológica, TI, São Paulo, Brasil">
+{% elif lang == 'en' %}
+<meta name="description" content="Galeleo - Technology consulting since 1983. Experts in Vibe Coding, AI Agents and Multi-platform Integrations. Transforming ideas into intelligent solutions with over 40 years of experience.">
+<meta name="keywords" content="Galeleo, technology consulting, Vibe Coding, AI agents, multi-platform integrations, software development, artificial intelligence, automation, technological innovation, IT, São Paulo, Brazil">
+{% elif lang == 'es' %}
+<meta name="description" content="Galeleo - Consultoría en tecnología desde 1983. Expertos en Vibe Coding, Agentes de IA e Integraciones Multi-plataformas. Transformando ideas en soluciones inteligentes con más de 40 años de experiencia.">
+<meta name="keywords" content="Galeleo, consultoría en tecnología, Vibe Coding, agentes de IA, integraciones multi-plataformas, desarrollo de software, inteligencia artificial, automatización, innovación tecnológica, TI, São Paulo, Brasil">
+{% endif %}
+<meta name="robots" content="index,follow">
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <section class="hero-section">

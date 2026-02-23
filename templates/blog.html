@@ -2,6 +2,20 @@
 
 {% block title %}{{ content.blog.title if content.blog else 'Blog - Casos de Sucesso' }} - Galeleo{% endblock %}
 
+{% block extra_head %}
+{% if lang == 'pt' %}
+<meta name="description" content="Casos de sucesso da Galeleo: conheça projetos inovadores em saúde digital, bem-estar mental com IA e gestão inteligente de recursos. Protocolo Veredas, Plataforma Veras e HydroApp.">
+<meta name="keywords" content="casos de sucesso, Galeleo, Protocolo Veredas, Plataforma Veras, HydroApp, saúde digital, IA em saúde, gestão inteligente, inovação tecnológica, projetos de tecnologia">
+{% elif lang == 'en' %}
+<meta name="description" content="Galeleo success stories: discover innovative projects in digital health, AI-powered mental wellness and smart resource management. Veredas Protocol, Veras Platform and HydroApp.">
+<meta name="keywords" content="success stories, Galeleo, Veredas Protocol, Veras Platform, HydroApp, digital health, AI in healthcare, smart management, technological innovation, technology projects">
+{% elif lang == 'es' %}
+<meta name="description" content="Casos de éxito de Galeleo: conozca proyectos innovadores en salud digital, bienestar mental con IA y gestión inteligente de recursos. Protocolo Veredas, Plataforma Veras y HydroApp.">
+<meta name="keywords" content="casos de éxito, Galeleo, Protocolo Veredas, Plataforma Veras, HydroApp, salud digital, IA en salud, gestión inteligente, innovación tecnológica, proyectos de tecnología">
+{% endif %}
+<meta name="robots" content="index,follow">
+{% endblock %}
+
 {% block content %}
 <!-- Blog Header -->
 <section class="blog-header-section">

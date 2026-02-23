@@ -2,6 +2,20 @@
 
 {% block title %}{{ content.contact.title if content.contact else 'Fale Conosco' }} - Galeleo{% endblock %}
 
+{% block extra_head %}
+{% if lang == 'pt' %}
+<meta name="description" content="Entre em contato com a Galeleo. Vamos conversar sobre como transformar sua ideia em uma solução tecnológica inovadora. Consultoria em Vibe Coding, IA e integrações.">
+<meta name="keywords" content="contato Galeleo, consultoria tecnológica, orçamento tecnologia, fale conosco, desenvolvimento de software, inteligência artificial, São Paulo">
+{% elif lang == 'en' %}
+<meta name="description" content="Contact Galeleo. Let's talk about how to transform your idea into an innovative technological solution. Consulting in Vibe Coding, AI and integrations.">
+<meta name="keywords" content="contact Galeleo, technology consulting, technology quote, contact us, software development, artificial intelligence, São Paulo">
+{% elif lang == 'es' %}
+<meta name="description" content="Contacte con Galeleo. Hablemos sobre cómo transformar su idea en una solución tecnológica innovadora. Consultoría en Vibe Coding, IA e integraciones.">
+<meta name="keywords" content="contacto Galeleo, consultoría tecnológica, presupuesto tecnología, contáctenos, desarrollo de software, inteligencia artificial, São Paulo">
+{% endif %}
+<meta name="robots" content="index,follow">
+{% endblock %}
+
 {% block content %}
 <!-- Contact Header -->
 <section class="contact-header-section">

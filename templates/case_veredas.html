@@ -7,14 +7,57 @@
 {% if lang == 'pt' %}
 <meta name="description" content="Plataforma Protocolo Veredas: solução tecnológica revolucionária para tratamento personalizado de Parkinson, combinando inteligência artificial e expertise clínica para melhorar a qualidade de vida dos pacientes.">
 <meta name="keywords" content="Parkinson, tratamento de Parkinson, Plataforma Protocolo Veredas, Galeleo, tecnologia médica, IA em saúde, monitoramento personalizado, inovação médica, assistência neurológica, saúde digital, qualidade de vida, machine learning médico">
+<meta property="og:title" content="Protocolo Veredas - Tratamento Inovador de Parkinson | Galeleo">
+<meta property="og:description" content="Solução tecnológica revolucionária para tratamento personalizado de Parkinson, combinando IA e expertise clínica de 30 anos.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:title" content="Protocolo Veredas - Tratamento Inovador de Parkinson | Galeleo">
+<meta name="twitter:description" content="Solução tecnológica para tratamento personalizado de Parkinson com IA e expertise clínica de 30 anos.">
 {% elif lang == 'en' %}
 <meta name="description" content="Protocolo Veredas Platform: revolutionary technological solution for personalized Parkinson's treatment, combining artificial intelligence and clinical expertise to improve patients' quality of life.">
 <meta name="keywords" content="Parkinson, Parkinson's treatment, Protocolo Veredas Platform, Galeleo, medical technology, AI in healthcare, personalized monitoring, medical innovation, neurological assistance, digital health, quality of life, medical machine learning">
+<meta property="og:title" content="Protocolo Veredas - Innovative Parkinson's Treatment | Galeleo">
+<meta property="og:description" content="Revolutionary technological solution for personalized Parkinson's treatment, combining AI and 30 years of clinical expertise.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Protocolo Veredas - Innovative Parkinson's Treatment | Galeleo">
+<meta name="twitter:description" content="Revolutionary solution for Parkinson's treatment combining AI and 30 years of clinical expertise.">
 {% elif lang == 'es' %}
 <meta name="description" content="Plataforma Protocolo Veredas: solución tecnológica revolucionaria para el tratamiento personalizado del Parkinson, combinando inteligencia artificial y experiencia clínica para mejorar la calidad de vida de los pacientes.">
 <meta name="keywords" content="Parkinson, tratamiento de Parkinson, Plataforma Protocolo Veredas, Galeleo, tecnología médica, IA en salud, monitoreo personalizado, innovación médica, asistencia neurológica, salud digital, calidad de vida, machine learning médico">
+<meta property="og:title" content="Protocolo Veredas - Tratamiento Innovador del Parkinson | Galeleo">
+<meta property="og:description" content="Solución tecnológica revolucionaria para el tratamiento personalizado del Parkinson, combinando IA y 30 años de experiencia clínica.">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="Protocolo Veredas - Tratamiento Innovador del Parkinson | Galeleo">
+<meta name="twitter:description" content="Solución revolucionaria para el tratamiento del Parkinson con IA y 30 años de experiencia clínica.">
 {% endif %}
 <meta name="robots" content="index,follow">
+<meta property="og:url" content="{{ request.url }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Galeleo">
+<meta property="og:image" content="{{ request.url_root }}static/images/img_sessao_4_1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ request.url_root }}static/images/img_sessao_4_1.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Protocolo Veredas - Plataforma de Tratamento de Parkinson",
+  "url": "{{ request.url }}",
+  "image": "{{ request.url_root }}static/images/img_sessao_4_1.jpg",
+  "author": {"@type": "Organization", "name": "Galeleo"},
+  "publisher": {"@type": "Organization", "name": "Galeleo", "logo": {"@type": "ImageObject", "url": "{{ request.url_root }}static/images/galeleo-logo.png"}},
+  "datePublished": "2024-01-01",
+  "dateModified": "2026-05-20",
+  "description": "Plataforma tecnológica revolucionária para tratamento personalizado de Parkinson com IA e expertise clínica de 30 anos.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ request.url_root }}"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ request.url_root }}blog"},
+      {"@type": "ListItem", "position": 3, "name": "Protocolo Veredas", "item": "{{ request.url }}"}
+    ]
+  }
+}
+</script>
 {% endblock %}
 
 {% block content %}

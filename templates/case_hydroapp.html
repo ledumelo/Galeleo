@@ -7,14 +7,57 @@
 {% if lang == 'pt' %}
 <meta name="description" content="HydroApp: sistema revolucionário de gestão inteligente de água e gás para condomínios, utilizando IoT e leituras fotométricas automatizadas para monitoramento em tempo real, economia de recursos e sustentabilidade ambiental.">
 <meta name="keywords" content="HydroApp, gestão inteligente de água, monitoramento de gás, IoT em condomínios, Galeleo, tecnologia sustentável, economia de recursos hídricos, smart building, automação predial, leituras fotométricas, alertas em tempo real, gestão de utilities, sustentabilidade ambiental, economia de recursos naturais">
+<meta property="og:title" content="HydroApp - Gestão Inteligente de Água e Gás | Galeleo">
+<meta property="og:description" content="Sistema revolucionário de gestão de água e gás para condomínios com IoT, monitoramento em tempo real e economia de recursos.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:title" content="HydroApp - Gestão Inteligente de Água e Gás | Galeleo">
+<meta name="twitter:description" content="Gestão inteligente de água e gás para condomínios com IoT e monitoramento em tempo real.">
 {% elif lang == 'en' %}
 <meta name="description" content="HydroApp: revolutionary intelligent water and gas management system for condominiums, using IoT and automated photometric readings for real-time monitoring, resource savings and environmental sustainability.">
 <meta name="keywords" content="HydroApp, intelligent water management, gas monitoring, IoT in condominiums, Galeleo, sustainable technology, water resource savings, smart building, building automation, photometric readings, real-time alerts, utility management, environmental sustainability, natural resource savings">
+<meta property="og:title" content="HydroApp - Smart Water and Gas Management | Galeleo">
+<meta property="og:description" content="Revolutionary water and gas management system for condominiums using IoT, real-time monitoring and resource savings.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="HydroApp - Smart Water and Gas Management | Galeleo">
+<meta name="twitter:description" content="Smart water and gas management for condominiums with IoT and real-time monitoring.">
 {% elif lang == 'es' %}
 <meta name="description" content="HydroApp: sistema revolucionario de gestión inteligente de agua y gas para condominios, utilizando IoT y lecturas fotométricas automatizadas para monitoreo en tiempo real, ahorro de recursos y sostenibilidad ambiental.">
 <meta name="keywords" content="HydroApp, gestión inteligente de agua, monitoreo de gas, IoT en condominios, Galeleo, tecnología sostenible, ahorro de recursos hídricos, smart building, automatización predial, lecturas fotométricas, alertas en tiempo real, gestión de servicios públicos, sostenibilidad ambiental, ahorro de recursos naturales">
+<meta property="og:title" content="HydroApp - Gestión Inteligente de Agua y Gas | Galeleo">
+<meta property="og:description" content="Sistema revolucionario de gestión de agua y gas para condominios con IoT, monitoreo en tiempo real y ahorro de recursos.">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="HydroApp - Gestión Inteligente de Agua y Gas | Galeleo">
+<meta name="twitter:description" content="Gestión inteligente de agua y gas para condominios con IoT y monitoreo en tiempo real.">
 {% endif %}
 <meta name="robots" content="index,follow">
+<meta property="og:url" content="{{ request.url }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Galeleo">
+<meta property="og:image" content="{{ request.url_root }}static/images/img_sessao_4_3.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ request.url_root }}static/images/img_sessao_4_3.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "HydroApp - Gestão Inteligente de Água e Gás",
+  "url": "{{ request.url }}",
+  "image": "{{ request.url_root }}static/images/img_sessao_4_3.jpg",
+  "author": {"@type": "Organization", "name": "Galeleo"},
+  "publisher": {"@type": "Organization", "name": "Galeleo", "logo": {"@type": "ImageObject", "url": "{{ request.url_root }}static/images/galeleo-logo.png"}},
+  "datePublished": "2024-01-01",
+  "dateModified": "2026-05-20",
+  "description": "Sistema revolucionário de gestão inteligente de água e gás para condomínios com IoT e monitoramento em tempo real.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ request.url_root }}"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ request.url_root }}blog"},
+      {"@type": "ListItem", "position": 3, "name": "HydroApp", "item": "{{ request.url }}"}
+    ]
+  }
+}
+</script>
 {% endblock %}
 
 {% block content %}

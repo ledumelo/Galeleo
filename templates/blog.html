@@ -6,14 +6,51 @@
 {% if lang == 'pt' %}
 <meta name="description" content="Casos de sucesso da Galeleo: conheça projetos inovadores em saúde digital, bem-estar mental com IA e gestão inteligente de recursos. Protocolo Veredas, Plataforma Veras e HydroApp.">
 <meta name="keywords" content="casos de sucesso, Galeleo, Protocolo Veredas, Plataforma Veras, HydroApp, saúde digital, IA em saúde, gestão inteligente, inovação tecnológica, projetos de tecnologia">
+<meta property="og:title" content="Blog - Casos de Sucesso | Galeleo">
+<meta property="og:description" content="Conheça projetos inovadores da Galeleo em saúde digital, bem-estar mental com IA e gestão inteligente de recursos.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:title" content="Blog - Casos de Sucesso | Galeleo">
+<meta name="twitter:description" content="Conheça projetos inovadores da Galeleo em saúde digital, bem-estar mental com IA e gestão inteligente de recursos.">
 {% elif lang == 'en' %}
 <meta name="description" content="Galeleo success stories: discover innovative projects in digital health, AI-powered mental wellness and smart resource management. Veredas Protocol, Veras Platform and HydroApp.">
 <meta name="keywords" content="success stories, Galeleo, Veredas Protocol, Veras Platform, HydroApp, digital health, AI in healthcare, smart management, technological innovation, technology projects">
+<meta property="og:title" content="Blog - Success Stories | Galeleo">
+<meta property="og:description" content="Discover Galeleo's innovative projects in digital health, AI-powered mental wellness and smart resource management.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Blog - Success Stories | Galeleo">
+<meta name="twitter:description" content="Discover Galeleo's innovative projects in digital health, AI-powered mental wellness and smart resource management.">
 {% elif lang == 'es' %}
 <meta name="description" content="Casos de éxito de Galeleo: conozca proyectos innovadores en salud digital, bienestar mental con IA y gestión inteligente de recursos. Protocolo Veredas, Plataforma Veras y HydroApp.">
 <meta name="keywords" content="casos de éxito, Galeleo, Protocolo Veredas, Plataforma Veras, HydroApp, salud digital, IA en salud, gestión inteligente, innovación tecnológica, proyectos de tecnología">
+<meta property="og:title" content="Blog - Casos de Éxito | Galeleo">
+<meta property="og:description" content="Conozca los proyectos innovadores de Galeleo en salud digital, bienestar mental con IA y gestión inteligente de recursos.">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="Blog - Casos de Éxito | Galeleo">
+<meta name="twitter:description" content="Conozca los proyectos innovadores de Galeleo en salud digital, bienestar mental con IA y gestión inteligente de recursos.">
 {% endif %}
 <meta name="robots" content="index,follow">
+<meta property="og:url" content="{{ request.url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Galeleo">
+<meta property="og:image" content="{{ request.url_root }}static/images/galeleo-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ request.url_root }}static/images/galeleo-logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Blog - Casos de Sucesso | Galeleo",
+  "url": "{{ request.url }}",
+  "description": "Casos de sucesso da Galeleo em saúde digital, bem-estar mental com IA e gestão inteligente de recursos.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ request.url_root }}"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ request.url }}"}
+    ]
+  }
+}
+</script>
 {% endblock %}
 
 {% block content %}

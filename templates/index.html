@@ -6,14 +6,48 @@
 {% if lang == 'pt' %}
 <meta name="description" content="Galeleo - Consultoria em tecnologia desde 1983. Especialistas em Vibe Coding, Agentes de IA e Integrações Multi-plataformas. Transformando ideias em soluções inteligentes com mais de 40 anos de experiência.">
 <meta name="keywords" content="Galeleo, consultoria em tecnologia, Vibe Coding, agentes de IA, integrações multi-plataformas, desenvolvimento de software, inteligência artificial, automação, inovação tecnológica, TI, São Paulo, Brasil">
+<meta property="og:title" content="Galeleo - Transformando Ideias em Soluções Inteligentes">
+<meta property="og:description" content="Consultoria em tecnologia desde 1983. Especialistas em Vibe Coding, Agentes de IA e Integrações Multi-plataformas. Mais de 40 anos de experiência.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:title" content="Galeleo - Transformando Ideias em Soluções Inteligentes">
+<meta name="twitter:description" content="Consultoria em tecnologia desde 1983. Especialistas em Vibe Coding, Agentes de IA e Integrações Multi-plataformas.">
 {% elif lang == 'en' %}
 <meta name="description" content="Galeleo - Technology consulting since 1983. Experts in Vibe Coding, AI Agents and Multi-platform Integrations. Transforming ideas into intelligent solutions with over 40 years of experience.">
 <meta name="keywords" content="Galeleo, technology consulting, Vibe Coding, AI agents, multi-platform integrations, software development, artificial intelligence, automation, technological innovation, IT, São Paulo, Brazil">
+<meta property="og:title" content="Galeleo - Transforming Ideas into Intelligent Solutions">
+<meta property="og:description" content="Technology consulting since 1983. Experts in Vibe Coding, AI Agents and Multi-platform Integrations. Over 40 years of experience.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Galeleo - Transforming Ideas into Intelligent Solutions">
+<meta name="twitter:description" content="Technology consulting since 1983. Experts in Vibe Coding, AI Agents and Multi-platform Integrations.">
 {% elif lang == 'es' %}
 <meta name="description" content="Galeleo - Consultoría en tecnología desde 1983. Expertos en Vibe Coding, Agentes de IA e Integraciones Multi-plataformas. Transformando ideas en soluciones inteligentes con más de 40 años de experiencia.">
 <meta name="keywords" content="Galeleo, consultoría en tecnología, Vibe Coding, agentes de IA, integraciones multi-plataformas, desarrollo de software, inteligencia artificial, automatización, innovación tecnológica, TI, São Paulo, Brasil">
+<meta property="og:title" content="Galeleo - Transformando Ideas en Soluciones Inteligentes">
+<meta property="og:description" content="Consultoría en tecnología desde 1983. Expertos en Vibe Coding, Agentes de IA e Integraciones Multi-plataformas. Más de 40 años de experiencia.">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="Galeleo - Transformando Ideas en Soluciones Inteligentes">
+<meta name="twitter:description" content="Consultoría en tecnología desde 1983. Expertos en Vibe Coding, Agentes de IA e Integraciones Multi-plataformas.">
 {% endif %}
 <meta name="robots" content="index,follow">
+<meta property="og:url" content="{{ request.url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Galeleo">
+<meta property="og:image" content="{{ request.url_root }}static/images/galeleo-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ request.url_root }}static/images/galeleo-logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Galeleo - Consultoria em Tecnologia",
+  "url": "{{ request.url }}",
+  "description": "Consultoria em tecnologia desde 1983. Especialistas em Vibe Coding, Agentes de IA e Integrações Multi-plataformas.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ request.url_root }}"}]
+  }
+}
+</script>
 {% endblock %}
 
 {% block content %}
@@ -83,7 +117,7 @@
                     <h4>{{ content.services.video_coding.title if content.services else 'Vibe Coding' }}</h4>
                     <p>{{ content.services.video_coding.description if content.services else 'Uma abordagem revolucionária de desenvolvimento de software que coloca a intenção do desenvolvedor no centro do processo — e não mais a escrita manual de código linha por linha' }}</p>
                     <div class="service-features">
-                        <img src="https://pixabay.com/get/g093bb10c9db2b677deb127fbdedb3f8c019c0d17f203f523a2276ed1a765dc4c2a421f6e0cd9e83361b0c847f663f99278f350d3b39f3b134aa8ed1f02730bee_1280.jpg"
+                        <img src="{{ url_for('static', filename='images/img_sessao_4_1.jpg') }}"
                              alt="Vibe Coding" class="img-fluid rounded">
                     </div>
                 </div>
@@ -98,7 +132,7 @@
                     <h4>{{ content.services.ai_agents.title if content.services else 'Agentes de IA' }}</h4>
                     <p>{{ content.services.ai_agents.description if content.services else 'Criação de agentes inteligentes personalizados para automatizar processos e melhorar a experiência do usuário' }}</p>
                     <div class="service-features">
-                        <img src="https://pixabay.com/get/g5c07da69eedb8a38634266cd418faf7c099b8758983db95ccbcb1004e1dc8b21465ce57828451690fe385983859eaf2ad5012be9aea523028689ce91d7d6a849_1280.jpg"
+                        <img src="{{ url_for('static', filename='images/img_sessao_4_2.jpg') }}"
                              alt="AI Agents" class="img-fluid rounded">
                     </div>
                 </div>
@@ -113,7 +147,7 @@
                     <h4>{{ content.services.integrations.title if content.services else 'Integrações Multi-plataformas' }}</h4>
                     <p>{{ content.services.integrations.description if content.services else 'Desenvolvimento de soluções escaláveis que conectam diferentes sistemas e plataformas de forma eficiente' }}</p>
                     <div class="service-features">
-                        <img src="https://pixabay.com/get/g3acad89a550e72c41c1b0dd5b52d385dad0dc5b137a6b5ab55f7942a3e5f1c41a5d945a5ecd55a6552fc6b253ebf99721db9f48421db63ab7963f1ff66a549b3_1280.jpg"
+                        <img src="{{ url_for('static', filename='images/img_sessao_4_3.jpg') }}"
                              alt="Multi-platform" class="img-fluid rounded">
                     </div>
                 </div>
@@ -153,7 +187,7 @@
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="https://pixabay.com/get/g9a2d6b7073189155d2ee48164355f4a67260a6130531e3caba5f07975d2fa2282532e139f7ca3afc2793170921672dda2381711d8282906be491dea78a6c8a45_1280.jpg"
+                <img src="{{ url_for('static', filename='images/img_dashboard.jpg') }}"
                      alt="Professional Experience" class="img-fluid rounded-3 shadow">
             </div>
         </div>

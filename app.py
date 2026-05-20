@@ -78,6 +78,51 @@ def contact():
     
     return render_template('contact.html', content=content.get(lang, {}), lang=lang)
 
+@app.route('/robots.txt')
+def robots_txt():
+    from flask import Response
+    content_txt = f"""User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: {request.url_root}sitemap.xml"""
+    return Response(content_txt, mimetype='text/plain')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    from flask import Response
+    pages = [
+        ('index', {}),
+        ('blog', {}),
+        ('contact', {}),
+        ('case_study', {'case_name': 'veredas'}),
+        ('case_study', {'case_name': 'veras'}),
+        ('case_study', {'case_name': 'hydroapp'}),
+    ]
+    langs = ['pt', 'en', 'es']
+    hreflang_map = {'pt': 'pt-BR', 'en': 'en', 'es': 'es'}
+
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ]
+    for endpoint, kwargs in pages:
+        for lang in langs:
+            url = url_for(endpoint, lang=lang, _external=True, **kwargs)
+            priority = '1.0' if endpoint == 'index' else '0.8'
+            xml_lines.append('  <url>')
+            xml_lines.append(f'    <loc>{url}</loc>')
+            xml_lines.append(f'    <changefreq>monthly</changefreq>')
+            xml_lines.append(f'    <priority>{priority}</priority>')
+            for alt_lang in langs:
+                alt_url = url_for(endpoint, lang=alt_lang, _external=True, **kwargs)
+                hl = hreflang_map[alt_lang]
+                xml_lines.append(f'    <xhtml:link rel="alternate" hreflang="{hl}" href="{alt_url}"/>')
+            xml_lines.append('  </url>')
+    xml_lines.append('</urlset>')
+    return Response('\n'.join(xml_lines), mimetype='application/xml')
+
 @app.route('/api/language/<lang>')
 def set_language(lang):
     if lang in ['pt', 'en', 'es']:

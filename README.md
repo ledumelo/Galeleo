@@ -175,5 +175,4 @@ gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 
 ---
 
-**Desenvolvido com dedicação pela equipe Galeleo**  
-*Transformando ideias em soluções inteligentes desde 1983*
+**Desenvolvido com dedicação pela equipe Galeleo**

@@ -242,7 +242,8 @@
       "links_title": "Links",
       "contact_title": "Contato",
       "rights": "Todos os direitos reservados.",
-      "since": "Inovando desde"
+      "since": "Inovando desde",
+      "since_founded": "Desde 1992"
     }
   },
   "en": {
@@ -488,7 +489,8 @@
       "links_title": "Links",
       "contact_title": "Contact",
       "rights": "All rights reserved.",
-      "since": "Innovating since"
+      "since": "Innovating since",
+      "since_founded": "Since 1992"
     }
   },
   "es": {
@@ -734,7 +736,8 @@
       "links_title": "Enlaces",
       "contact_title": "Contacto",
       "rights": "Todos los derechos reservados.",
-      "since": "Innovando desde"
+      "since": "Innovando desde",
+      "since_founded": "Desde 1992"
     }
   }
 }

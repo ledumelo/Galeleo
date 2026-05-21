@@ -10,6 +10,10 @@ logging.basicConfig(level=logging.DEBUG)
 app = Flask(__name__)
 app.secret_key = os.environ.get("SESSION_SECRET", "galeleo-default-secret-key-2024")
 
+@app.context_processor
+def inject_year():
+    return {'current_year': datetime.now().year}
+
 # Load multilingual content
 def load_content():
     try:

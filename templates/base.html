@@ -144,18 +144,13 @@
             </div>
             <hr class="my-4">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="d-flex align-items-center">
                         <img src="{{ url_for('static', filename='images/galeleo-logo.png') }}" alt="Galeleo" height="36" class="me-2">
                         <p class="text-muted mb-0">
-                            &copy; 2026-2028 Galeleo. {{ content.footer.rights if content.footer else 'Todos os direitos reservados.' }}
+                            &copy; {{ current_year }} Galeleo. {{ content.footer.rights if content.footer else 'Todos os direitos reservados.' }} | {{ content.footer.since_founded if content.footer else 'Desde 1992' }}
                         </p>
                     </div>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <span class="text-muted">
-                        {{ content.footer.since if content.footer else 'Inovando desde' }} 1983
-                    </span>
                 </div>
             </div>
         </div>

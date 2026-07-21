@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "J7weDX4xB3tgWM6e0tRx8"
+uri = "file://static/images/img_analogica.png"
+type = "image"
+title = "emergency geolocation map interface"

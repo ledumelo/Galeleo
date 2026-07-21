@@ -47,7 +47,7 @@ def case_study(case_name):
     if lang not in ['pt', 'en', 'es']:
         lang = 'pt'
     
-    valid_cases = ['veredas', 'veras', 'hydroapp']
+    valid_cases = ['veredas', 'veras', 'hydroapp', 'analogica']
     if case_name not in valid_cases:
         return redirect(url_for('blog', lang=lang))
     

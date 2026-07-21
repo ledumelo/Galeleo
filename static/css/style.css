@@ -386,6 +386,10 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #3498db, #2980b9);
 }
 
+.post-category.safety {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+}
+
 .post-content {
     padding: 2rem;
 }

@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% if lang == 'en' %}Analógica: The Emergency Bracelet That Saves Lives — Galeleo{% elif lang == 'es' %}Analógica: La Pulsera de Emergencia que Salva Vidas — Galeleo{% else %}Analógica: A Pulseira de Emergência que Já Salvou Vidas — Galeleo{% endif %}
+{% endblock %}
+
+{% block extra_head %}
+<link rel="canonical" href="https://galeleo.com.br/case/analogica{% if lang != 'pt' %}?lang={{ lang }}{% endif %}">
+<link rel="alternate" hreflang="pt" href="https://galeleo.com.br/case/analogica">
+<link rel="alternate" hreflang="en" href="https://galeleo.com.br/case/analogica?lang=en">
+<link rel="alternate" hreflang="es" href="https://galeleo.com.br/case/analogica?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://galeleo.com.br/case/analogica">
+{% if lang == 'en' %}
+<meta name="description" content="How Galeleo built Analógica — an emergency QR Code bracelet that gives first responders instant access to vital medical data and notifies your family via WhatsApp. No app. No internet.">
+<meta property="og:title" content="Analógica: The Emergency Bracelet That Saves Lives — Galeleo">
+<meta property="og:description" content="A QR Code bracelet that gives any first responder instant access to vital medical data — offline, no app needed. Family notified via WhatsApp in real time.">
+<meta name="twitter:title" content="Analógica: The Emergency Bracelet That Saves Lives — Galeleo">
+<meta name="twitter:description" content="QR Code emergency bracelet with offline access, WhatsApp alerts, and complete medical profile. Developed by Galeleo.">
+{% elif lang == 'es' %}
+<meta name="description" content="Cómo Galeleo desarrolló Analógica — una pulsera de emergencia con QR Code que da a los socorristas acceso inmediato a datos médicos vitales y notifica a la familia vía WhatsApp. Sin app. Sin internet.">
+<meta property="og:title" content="Analógica: La Pulsera de Emergencia que Salva Vidas — Galeleo">
+<meta property="og:description" content="Una pulsera con QR Code que da a cualquier socorrista acceso instantáneo a datos médicos vitales — offline, sin app. Familia notificada vía WhatsApp en tiempo real.">
+<meta name="twitter:title" content="Analógica: La Pulsera de Emergencia que Salva Vidas — Galeleo">
+<meta name="twitter:description" content="Pulsera de emergencia con QR Code, acceso offline, alertas WhatsApp y perfil médico completo. Desarrollado por Galeleo.">
+{% else %}
+<meta name="description" content="Como a Galeleo desenvolveu a Analógica — pulseira de emergência com QR Code que dá acesso imediato a dados médicos vitais e notifica a família via WhatsApp. Sem app. Sem internet.">
+<meta property="og:title" content="Analógica: A Pulseira de Emergência que Já Salvou Vidas — Galeleo">
+<meta property="og:description" content="Uma pulseira com QR Code que dá a qualquer socorrista acesso instantâneo a dados médicos vitais — offline, sem app. Família notificada via WhatsApp em tempo real.">
+<meta name="twitter:title" content="Analógica: A Pulseira de Emergência que Já Salvou Vidas — Galeleo">
+<meta name="twitter:description" content="Pulseira de emergência com QR Code, acesso offline, alertas via WhatsApp e dossiê médico completo. Desenvolvido pela Galeleo.">
+{% endif %}
+<meta name="robots" content="index,follow">
+<meta property="og:url" content="{{ request.url }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Galeleo">
+<meta property="og:image" content="{{ request.url_root }}static/images/img_dashboard.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ request.url_root }}static/images/img_dashboard.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Analógica - Pulseira de Emergência com QR Code",
+  "url": "{{ request.url }}",
+  "image": "{{ request.url_root }}static/images/img_dashboard.jpg",
+  "author": {"@type": "Organization", "name": "Galeleo"},
+  "publisher": {"@type": "Organization", "name": "Galeleo", "logo": {"@type": "ImageObject", "url": "{{ request.url_root }}static/images/galeleo-logo.png"}},
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-07-21",
+  "description": "Pulseira inteligente com QR Code que disponibiliza dados médicos vitais e notifica familiares em emergências via WhatsApp — sem app, sem internet.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ request.url_root }}"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ request.url_root }}blog"},
+      {"@type": "ListItem", "position": 3, "name": "Analógica", "item": "{{ request.url }}"}
+    ]
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Case Header -->
+<section class="case-header-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="case-breadcrumb" data-aos="fade-up">
+                    <a href="{{ url_for('blog', lang=lang) }}" class="text-muted">{{ content.nav.blog if content.nav else 'Blog' }}</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-primary">Analógica</span>
+                </div>
+                <h1 class="case-title" data-aos="fade-up" data-aos-delay="100">
+                    {{ content.cases.analogica.full_title if content.cases else 'Analógica: A Pulseira de Emergência que Já Salvou Vidas' }}
+                </h1>
+                <p class="case-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    {{ content.cases.analogica.subtitle if content.cases else 'Em uma emergência, segundos fazem a diferença. A Analógica coloca seu histórico médico completo e seus contatos de emergência no pulso — acessíveis via QR Code por qualquer socorrista, em qualquer lugar do mundo.' }}
+                </p>
+                <div class="case-meta" data-aos="fade-up" data-aos-delay="300">
+                    <span class="badge bg-primary me-2">{{ content.cases.analogica.category if content.cases else 'Segurança & Saúde' }}</span>
+                    <span class="badge bg-secondary me-2">QR Code</span>
+                    <span class="badge bg-success">WhatsApp</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="case-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="{{ url_for('static', filename='images/img_dashboard.jpg') }}"
+                         alt="Analógica Pulseira de Emergência" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Content -->
+<section class="case-content-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <!-- Overview -->
+                <div class="case-section" data-aos="fade-up">
+                    <h2>{{ content.cases.analogica.overview_title if content.cases else 'Visão Geral do Projeto' }}</h2>
+                    <p class="lead">
+                        {{ content.cases.analogica.overview if content.cases else 'A Analógica é uma pulseira de emergência com QR Code exclusivo que armazena dados médicos vitais — tipo sanguíneo, alergias, medicamentos, condições de saúde e contatos de emergência. Desenvolvida para funcionar 100% offline, qualquer socorrista com um smartphone acessa todas as informações em segundos, sem precisar de app ou internet.' }}
+                    </p>
+                </div>
+
+                <!-- Challenge -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.analogica.challenge_title if content.cases else 'O Desafio' }}</h3>
+                    <p>
+                        {{ content.cases.analogica.challenge if content.cases else 'Em emergências médicas, os primeiros minutos são críticos. Pacientes inconscientes não conseguem informar alergias, medicamentos em uso ou contatos familiares. Socorristas muitas vezes agem no escuro, sem informações essenciais que poderiam salvar vidas. A comunicação com familiares depende de documentos físicos que raramente estão acessíveis.' }}
+                    </p>
+                </div>
+
+                <!-- How it works -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>
+                        {% if lang == 'en' %}3 Steps, Lifelong Protection{% elif lang == 'es' %}3 Pasos, Protección para Siempre{% else %}3 Passos, Proteção para Sempre{% endif %}
+                    </h3>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-4">
+                            <div class="feature-card text-center">
+                                <div class="feature-icon">
+                                    <span class="fw-bold" style="font-size:1.5rem; color: var(--primary-orange);">01</span>
+                                </div>
+                                <h5>
+                                    {% if lang == 'en' %}Receive Your Bracelet{% elif lang == 'es' %}Recibe tu Pulsera{% else %}Receba sua Pulseira{% endif %}
+                                </h5>
+                                <p>
+                                    {% if lang == 'en' %}Arrives at your door with a unique QR Code and welcome letter. Ready to register in under 5 minutes.{% elif lang == 'es' %}Llega a tu puerta con QR Code único y carta de bienvenida. Lista para registrar en menos de 5 minutos.{% else %}Chega na sua porta com QR Code único e carta de boas-vindas. Em menos de 5 minutos, pronto para cadastrar.{% endif %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card text-center">
+                                <div class="feature-icon">
+                                    <span class="fw-bold" style="font-size:1.5rem; color: var(--primary-orange);">02</span>
+                                </div>
+                                <h5>
+                                    {% if lang == 'en' %}Register in 10 Minutes{% elif lang == 'es' %}Regístrate en 10 Minutos{% else %}Cadastre em 10 Minutos{% endif %}
+                                </h5>
+                                <p>
+                                    {% if lang == 'en' %}Blood type, allergies, medications, health conditions and emergency contacts. Fast, simple, editable anytime.{% elif lang == 'es' %}Tipo sanguíneo, alergias, medicamentos, condiciones de salud y contactos de emergencia. Rápido, simple y editable cuando quieras.{% else %}Tipo sanguíneo, alergias, medicamentos, condições de saúde e contatos de emergência. Rápido, simples, editável quando quiser.{% endif %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card text-center">
+                                <div class="feature-icon">
+                                    <span class="fw-bold" style="font-size:1.5rem; color: var(--primary-orange);">03</span>
+                                </div>
+                                <h5>
+                                    {% if lang == 'en' %}Wear and Forget — Until Needed{% elif lang == 'es' %}Vístela y Olvida — Hasta Necesitarla{% else %}Vista e Esqueça — Até Precisar{% endif %}
+                                </h5>
+                                <p>
+                                    {% if lang == 'en' %}In an emergency, any smartphone scans the QR and accesses everything in seconds — no app, no internet, no help needed.{% elif lang == 'es' %}En una emergencia, cualquier smartphone apunta al QR y accede a todo en segundos — sin app, sin internet, sin tu ayuda.{% else %}Em uma emergência, qualquer smartphone aponta para o QR e acessa tudo em segundos — sem app, sem internet, sem precisar da sua ajuda.{% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.analogica.solution_title if content.cases else 'Nossa Solução' }}</h3>
+                    <p>
+                        {{ content.cases.analogica.solution if content.cases else 'Desenvolvemos uma pulseira com QR Code intransferível que centraliza todas as informações médicas do usuário em uma plataforma segura. Em emergências, basta um smartphone apontar para o QR Code — sem app, sem internet — para acessar os dados vitais. Simultaneamente, os contatos de emergência recebem notificação automática via WhatsApp com localização e horário do ocorrido.' }}
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.analogica.mission_title if content.cases else 'Nossa Missão' }}</h3>
+                    <div class="mission-content p-4 bg-light rounded-3">
+                        <p class="lead text-center mb-0">
+                            <em>{{ content.cases.analogica.mission if content.cases else 'Garantir que, em qualquer emergência, a história de saúde de cada pessoa fale por ela — mesmo quando não puder. Cada pulseira é uma promessa de segurança para quem usa e paz de espírito para quem ama.' }}</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.analogica.features_title if content.cases else 'Principais Funcionalidades' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <h5>{{ content.cases.analogica.feature1_title if content.cases else 'QR Code Offline' }}</h5>
+                                <p>{{ content.cases.analogica.feature1_desc if content.cases else 'Dados médicos acessíveis sem app, sem internet, em qualquer smartphone' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <h5>{{ content.cases.analogica.feature2_title if content.cases else 'Alerta via WhatsApp' }}</h5>
+                                <p>{{ content.cases.analogica.feature2_desc if content.cases else 'Familiares notificados automaticamente no momento do escaneamento' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-notes-medical"></i>
+                                </div>
+                                <h5>{{ content.cases.analogica.feature3_title if content.cases else 'Dossiê Médico Completo' }}</h5>
+                                <p>{{ content.cases.analogica.feature3_desc if content.cases else 'Tipo sanguíneo, alergias, medicamentos e condições de saúde' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h5>{{ content.cases.analogica.feature4_title if content.cases else 'Contra-senha de Segurança' }}</h5>
+                                <p>{{ content.cases.analogica.feature4_desc if content.cases else 'Acesso restrito aos contatos autorizados com código de proteção' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.analogica.results_title if content.cases else 'Impacto Real' }}</h3>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">&lt; 5s</h4>
+                                <p>{{ content.cases.analogica.result1 if content.cases else 'Tempo de acesso às informações' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">100%</h4>
+                                <p>{{ content.cases.analogica.result2 if content.cases else 'Disponibilidade offline' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">
+                                    {% if lang == 'en' %}Instant{% elif lang == 'es' %}Inmediata{% else %}Imediata{% endif %}
+                                </h4>
+                                <p>{{ content.cases.analogica.result3 if content.cases else 'Notificação da família' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="result-stat">
+                                <h4 class="text-primary">
+                                    {% if lang == 'en' %}Any{% elif lang == 'es' %}Cualquier{% else %}Qualquer{% endif %}
+                                </h4>
+                                <p>{{ content.cases.analogica.result4 if content.cases else 'Compatibilidade com smartphones' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology -->
+                <div class="case-section" data-aos="fade-up">
+                    <h3>{{ content.cases.analogica.tech_title if content.cases else 'Tecnologias Utilizadas' }}</h3>
+                    <div class="row g-3 mt-3">
+                        <div class="col-auto">
+                            <span class="badge bg-primary-gradient tech-badge">QR Code Criptografado</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-success-gradient tech-badge">WhatsApp API</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-warning-gradient tech-badge">Armazenamento Seguro</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-info-gradient tech-badge">Funcionamento Offline</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-secondary-gradient tech-badge">Interface Responsiva</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Footer CTA -->
+<section class="case-footer-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="cta-title mb-3">
+                    {{ content.cases.analogica.cta_title if content.cases else 'Proteja Quem Você Ama' }}
+                </h2>
+                <p class="cta-subtitle mb-4">
+                    {{ content.cases.analogica.cta_subtitle if content.cases else 'Vamos conversar sobre como integrar a Analógica ao seu projeto ou adquirir pulseiras para sua organização' }}
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="{{ url_for('contact', lang=lang) }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane me-2"></i>
+                        {{ content.cases.analogica.cta_contact if content.cases else 'Falar com a Galeleo' }}
+                    </a>
+                    <a href="{{ url_for('blog', lang=lang) }}" class="btn btn-outline-secondary btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        {{ content.cases.analogica.cta_back if content.cases else 'Voltar ao Blog' }}
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <p class="text-muted">
+                        {% if lang == 'en' %}Learn more at{% elif lang == 'es' %}Conoce más en{% else %}Conheça mais em{% endif %}
+                        <a href="https://analogicaexpert.com.br" target="_blank" class="text-primary text-decoration-none">analogicaexpert.com.br</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

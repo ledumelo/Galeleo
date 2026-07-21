@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row g-4">
             <!-- Veredas Post -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
                         <img src="{{ url_for('static', filename='images/img_sessao_4_1.jpg') }}" 
@@ -115,7 +115,7 @@
             </div>
 
             <!-- Veras Post -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
                         <img src="{{ url_for('static', filename='images/img_sessao_4_2.jpg') }}" 
@@ -155,7 +155,7 @@
             </div>
 
             <!-- HydroApp Post -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
                         <img src="{{ url_for('static', filename='images/img_sessao_4_3.jpg') }}" 
@@ -187,6 +187,46 @@
                             <span class="tag">Automação</span>
                         </div>
                         <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-primary">
+                            {{ content.blog.read_more if content.blog else 'Ler Mais' }}
+                            <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Analógica Post -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <article class="blog-post-card h-100">
+                    <div class="post-image">
+                        <img src="{{ url_for('static', filename='images/img_dashboard.jpg') }}" 
+                             alt="Analógica Pulseira de Emergência" class="img-fluid">
+                        <div class="post-category safety">
+                            {{ content.blog.analogica.category if content.blog else 'Segurança & Saúde' }}
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                {{ content.blog.analogica.date if content.blog else '2026' }}
+                            </span>
+                            <span class="post-reading-time">
+                                <i class="fas fa-clock me-1"></i>
+                                {{ content.blog.analogica.reading_time if content.blog else '4 min' }}
+                            </span>
+                        </div>
+                        <h3 class="post-title">
+                            {{ content.blog.analogica.title if content.blog else 'Analógica: A Pulseira que Já Salvou Vidas' }}
+                        </h3>
+                        <p class="post-excerpt">
+                            {{ content.blog.analogica.excerpt if content.blog else 'Em segundos, qualquer socorrista acessa dados médicos vitais e notifica sua família via WhatsApp — sem app, sem internet. Uma pulseira com QR Code que funciona quando tudo mais falhar.' }}
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">QR Code</span>
+                            <span class="tag">Emergência</span>
+                            <span class="tag">WhatsApp</span>
+                        </div>
+                        <a href="{{ url_for('case_study', case_name='analogica', lang=lang) }}" class="btn btn-primary">
                             {{ content.blog.read_more if content.blog else 'Ler Mais' }}
                             <i class="fas fa-arrow-right ms-1"></i>
                         </a>

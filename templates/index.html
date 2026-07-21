@@ -290,7 +290,7 @@
                     <div class="case-content">
                         <h4>{{ content.cases.hydroapp.title if content.cases else 'HidroApp: Gestão Inteligente de Recursos' }}</h4>
                         <p>{{ content.cases.hydroapp.description if content.cases else 'Sistema revolucionário que automatiza a gestão de água e gás em condomínios, utilizando IA para monitoramento em tempo real e redução significativa de custos.' }}</p>
-                        <a href="https://hidroapp.com.br" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-primary">
                             {{ content.cases.read_more if content.cases else 'Ler Mais' }}
                         </a>
                     </div>

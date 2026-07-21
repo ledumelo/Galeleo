@@ -186,7 +186,7 @@
                             <span class="tag">Smart Cities</span>
                             <span class="tag">Automação</span>
                         </div>
-                        <a href="https://hidroapp.com.br" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-primary">
                             {{ content.blog.read_more if content.blog else 'Ler Mais' }}
                             <i class="fas fa-arrow-right ms-1"></i>
                         </a>

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Galeleo is a multilingual (Portuguese, English, Spanish) landing page and blog for a technology consulting company established in 1992. The site showcases 40+ years of experience in IT consulting since 1983, specializing in video coding, AI agents, and multi-platform integrations. The project includes a main landing page with modern visual appeal and a blog section featuring three case studies: Protocolo Veredas (Parkinson treatment platform), Veras (mental wellness AI platform), and HydroApp (smart water/gas management system).
+Galeleo is a multilingual (Portuguese, English, Spanish) landing page and blog for a technology consulting company established in 1992. The site showcases 40+ years of experience in IT consulting since 1983, specializing in video coding, AI agents, and multi-platform integrations. The project includes a main landing page with modern visual appeal and a blog section featuring three case studies: Protocolo Veredas (Parkinson treatment platform), Veras (mental wellness AI platform), and HidroApp (smart water/gas management system).
 
 ## User Preferences
 

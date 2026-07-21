@@ -1,32 +1,32 @@
 {% extends "base.html" %}
 
-{% block title %}{{ content.cases.hydroapp.title if content.cases else 'HydroApp - Gestão Inteligente de Recursos Hídricos' }} - Galeleo{% endblock %}
+{% block title %}{{ content.cases.hydroapp.title if content.cases else 'HidroApp - Gestão Inteligente de Recursos Hídricos' }} - Galeleo{% endblock %}
 
 {% block extra_head %}
-<!-- SEO tags HydroApp -->
+<!-- SEO tags HidroApp -->
 {% if lang == 'pt' %}
-<meta name="description" content="HydroApp: sistema revolucionário de gestão inteligente de água e gás para condomínios, utilizando IoT e leituras fotométricas automatizadas para monitoramento em tempo real, economia de recursos e sustentabilidade ambiental.">
-<meta name="keywords" content="HydroApp, gestão inteligente de água, monitoramento de gás, IoT em condomínios, Galeleo, tecnologia sustentável, economia de recursos hídricos, smart building, automação predial, leituras fotométricas, alertas em tempo real, gestão de utilities, sustentabilidade ambiental, economia de recursos naturais">
-<meta property="og:title" content="HydroApp - Gestão Inteligente de Água e Gás | Galeleo">
+<meta name="description" content="HidroApp: sistema revolucionário de gestão inteligente de água e gás para condomínios, utilizando IoT e leituras fotométricas automatizadas para monitoramento em tempo real, economia de recursos e sustentabilidade ambiental.">
+<meta name="keywords" content="HidroApp, gestão inteligente de água, monitoramento de gás, IoT em condomínios, Galeleo, tecnologia sustentável, economia de recursos hídricos, smart building, automação predial, leituras fotométricas, alertas em tempo real, gestão de utilities, sustentabilidade ambiental, economia de recursos naturais">
+<meta property="og:title" content="HidroApp - Gestão Inteligente de Água e Gás | Galeleo">
 <meta property="og:description" content="Sistema revolucionário de gestão de água e gás para condomínios com IoT, monitoramento em tempo real e economia de recursos.">
 <meta property="og:locale" content="pt_BR">
-<meta name="twitter:title" content="HydroApp - Gestão Inteligente de Água e Gás | Galeleo">
+<meta name="twitter:title" content="HidroApp - Gestão Inteligente de Água e Gás | Galeleo">
 <meta name="twitter:description" content="Gestão inteligente de água e gás para condomínios com IoT e monitoramento em tempo real.">
 {% elif lang == 'en' %}
-<meta name="description" content="HydroApp: revolutionary intelligent water and gas management system for condominiums, using IoT and automated photometric readings for real-time monitoring, resource savings and environmental sustainability.">
-<meta name="keywords" content="HydroApp, intelligent water management, gas monitoring, IoT in condominiums, Galeleo, sustainable technology, water resource savings, smart building, building automation, photometric readings, real-time alerts, utility management, environmental sustainability, natural resource savings">
-<meta property="og:title" content="HydroApp - Smart Water and Gas Management | Galeleo">
+<meta name="description" content="HidroApp: revolutionary intelligent water and gas management system for condominiums, using IoT and automated photometric readings for real-time monitoring, resource savings and environmental sustainability.">
+<meta name="keywords" content="HidroApp, intelligent water management, gas monitoring, IoT in condominiums, Galeleo, sustainable technology, water resource savings, smart building, building automation, photometric readings, real-time alerts, utility management, environmental sustainability, natural resource savings">
+<meta property="og:title" content="HidroApp - Smart Water and Gas Management | Galeleo">
 <meta property="og:description" content="Revolutionary water and gas management system for condominiums using IoT, real-time monitoring and resource savings.">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="HydroApp - Smart Water and Gas Management | Galeleo">
+<meta name="twitter:title" content="HidroApp - Smart Water and Gas Management | Galeleo">
 <meta name="twitter:description" content="Smart water and gas management for condominiums with IoT and real-time monitoring.">
 {% elif lang == 'es' %}
-<meta name="description" content="HydroApp: sistema revolucionario de gestión inteligente de agua y gas para condominios, utilizando IoT y lecturas fotométricas automatizadas para monitoreo en tiempo real, ahorro de recursos y sostenibilidad ambiental.">
-<meta name="keywords" content="HydroApp, gestión inteligente de agua, monitoreo de gas, IoT en condominios, Galeleo, tecnología sostenible, ahorro de recursos hídricos, smart building, automatización predial, lecturas fotométricas, alertas en tiempo real, gestión de servicios públicos, sostenibilidad ambiental, ahorro de recursos naturales">
-<meta property="og:title" content="HydroApp - Gestión Inteligente de Agua y Gas | Galeleo">
+<meta name="description" content="HidroApp: sistema revolucionario de gestión inteligente de agua y gas para condominios, utilizando IoT y lecturas fotométricas automatizadas para monitoreo en tiempo real, ahorro de recursos y sostenibilidad ambiental.">
+<meta name="keywords" content="HidroApp, gestión inteligente de agua, monitoreo de gas, IoT en condominios, Galeleo, tecnología sostenible, ahorro de recursos hídricos, smart building, automatización predial, lecturas fotométricas, alertas en tiempo real, gestión de servicios públicos, sostenibilidad ambiental, ahorro de recursos naturales">
+<meta property="og:title" content="HidroApp - Gestión Inteligente de Agua y Gas | Galeleo">
 <meta property="og:description" content="Sistema revolucionario de gestión de agua y gas para condominios con IoT, monitoreo en tiempo real y ahorro de recursos.">
 <meta property="og:locale" content="es_ES">
-<meta name="twitter:title" content="HydroApp - Gestión Inteligente de Agua y Gas | Galeleo">
+<meta name="twitter:title" content="HidroApp - Gestión Inteligente de Agua y Gas | Galeleo">
 <meta name="twitter:description" content="Gestión inteligente de agua y gas para condominios con IoT y monitoreo en tiempo real.">
 {% endif %}
 <meta name="robots" content="index,follow">
@@ -40,7 +40,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "HydroApp - Gestão Inteligente de Água e Gás",
+  "headline": "HidroApp - Gestão Inteligente de Água e Gás",
   "url": "{{ request.url }}",
   "image": "{{ request.url_root }}static/images/img_sessao_4_3.jpg",
   "author": {"@type": "Organization", "name": "Galeleo"},
@@ -53,7 +53,7 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ request.url_root }}"},
       {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ request.url_root }}blog"},
-      {"@type": "ListItem", "position": 3, "name": "HydroApp", "item": "{{ request.url }}"}
+      {"@type": "ListItem", "position": 3, "name": "HidroApp", "item": "{{ request.url }}"}
     ]
   }
 }
@@ -69,10 +69,10 @@
                 <div class="case-breadcrumb" data-aos="fade-up">
                     <a href="{{ url_for('blog', lang=lang) }}" class="text-muted">{{ content.nav.blog if content.nav else 'Blog' }}</a>
                     <span class="mx-2">/</span>
-                    <span class="text-primary">HydroApp</span>
+                    <span class="text-primary">HidroApp</span>
                 </div>
                 <h1 class="case-title" data-aos="fade-up" data-aos-delay="100">
-                    {{ content.cases.hydroapp.full_title if content.cases else 'HydroApp: Gestão Inteligente de Recursos Hídricos' }}
+                    {{ content.cases.hydroapp.full_title if content.cases else 'HidroApp: Gestão Inteligente de Recursos Hídricos' }}
                 </h1>
                 <p class="case-subtitle" data-aos="fade-up" data-aos-delay="200">
                     {{ content.cases.hydroapp.subtitle if content.cases else 'Sistema revolucionário que combina IoT e IA para automatizar a gestão de água e gás em condomínios, oferecendo monitoramento em tempo real e economia significativa.' }}
@@ -86,7 +86,7 @@
             <div class="col-lg-6">
                 <div class="case-image" data-aos="fade-left" data-aos-delay="200">
                     <img src="https://pixabay.com/get/gcbff7779f5128a8bfd6885a9838d5c2876cb19f59dfa8552001ba294bd9db8ec8feddbb189431aa64594bc4597ddc5ed0fac94e690ea52df0cfc57f8eab65520_1280.jpg" 
-                         alt="HydroApp System" class="img-fluid rounded-3 shadow-lg">
+                         alt="HidroApp System" class="img-fluid rounded-3 shadow-lg">
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
                 <div class="case-section" data-aos="fade-up">
                     <h2>{{ content.cases.hydroapp.overview_title if content.cases else 'Visão Geral do Projeto' }}</h2>
                     <p class="lead">
-                        {{ content.cases.hydroapp.overview if content.cases else 'HydroApp é uma solução completa de gestão inteligente que revolutiona o monitoramento de água e gás em condomínios. Utilizando sensores fotométricos IoT e inteligência artificial, o sistema oferece leituras automáticas, detecção de vazamentos e economia significativa de recursos.' }}
+                        {{ content.cases.hydroapp.overview if content.cases else 'HidroApp é uma solução completa de gestão inteligente que revolutiona o monitoramento de água e gás em condomínios. Utilizando sensores fotométricos IoT e inteligência artificial, o sistema oferece leituras automáticas, detecção de vazamentos e economia significativa de recursos.' }}
                     </p>
                 </div>
 
@@ -240,8 +240,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                <p class="mb-2">© 2024 HydroApp. Desenvolvido com inovação e sustentabilidade pela Galeleo.</p>
-                <p class="mb-0">Inspirado no trabalho pioneiro do <a href="https://hydro-app.replit.app/" target="_blank" class="text-primary text-decoration-none">HydroApp</a></p>
+                <p class="mb-2">© 2024 HidroApp. Desenvolvido com inovação e sustentabilidade pela Galeleo.</p>
+                <p class="mb-0">Inspirado no trabalho pioneiro do <a href="https://hydro-app.replit.app/" target="_blank" class="text-primary text-decoration-none">HidroApp</a></p>
             </div>
         </div>
     </div>

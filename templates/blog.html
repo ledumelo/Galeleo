@@ -4,24 +4,24 @@
 
 {% block extra_head %}
 {% if lang == 'pt' %}
-<meta name="description" content="Casos de sucesso da Galeleo: conheça projetos inovadores em saúde digital, bem-estar mental com IA e gestão inteligente de recursos. Protocolo Veredas, Plataforma Veras e HydroApp.">
-<meta name="keywords" content="casos de sucesso, Galeleo, Protocolo Veredas, Plataforma Veras, HydroApp, saúde digital, IA em saúde, gestão inteligente, inovação tecnológica, projetos de tecnologia">
+<meta name="description" content="Casos de sucesso da Galeleo: conheça projetos inovadores em saúde digital, bem-estar mental com IA e gestão inteligente de recursos. Protocolo Veredas, Plataforma Veras e HidroApp.">
+<meta name="keywords" content="casos de sucesso, Galeleo, Protocolo Veredas, Plataforma Veras, HidroApp, saúde digital, IA em saúde, gestão inteligente, inovação tecnológica, projetos de tecnologia">
 <meta property="og:title" content="Blog - Casos de Sucesso | Galeleo">
 <meta property="og:description" content="Conheça projetos inovadores da Galeleo em saúde digital, bem-estar mental com IA e gestão inteligente de recursos.">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:title" content="Blog - Casos de Sucesso | Galeleo">
 <meta name="twitter:description" content="Conheça projetos inovadores da Galeleo em saúde digital, bem-estar mental com IA e gestão inteligente de recursos.">
 {% elif lang == 'en' %}
-<meta name="description" content="Galeleo success stories: discover innovative projects in digital health, AI-powered mental wellness and smart resource management. Veredas Protocol, Veras Platform and HydroApp.">
-<meta name="keywords" content="success stories, Galeleo, Veredas Protocol, Veras Platform, HydroApp, digital health, AI in healthcare, smart management, technological innovation, technology projects">
+<meta name="description" content="Galeleo success stories: discover innovative projects in digital health, AI-powered mental wellness and smart resource management. Veredas Protocol, Veras Platform and HidroApp.">
+<meta name="keywords" content="success stories, Galeleo, Veredas Protocol, Veras Platform, HidroApp, digital health, AI in healthcare, smart management, technological innovation, technology projects">
 <meta property="og:title" content="Blog - Success Stories | Galeleo">
 <meta property="og:description" content="Discover Galeleo's innovative projects in digital health, AI-powered mental wellness and smart resource management.">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:title" content="Blog - Success Stories | Galeleo">
 <meta name="twitter:description" content="Discover Galeleo's innovative projects in digital health, AI-powered mental wellness and smart resource management.">
 {% elif lang == 'es' %}
-<meta name="description" content="Casos de éxito de Galeleo: conozca proyectos innovadores en salud digital, bienestar mental con IA y gestión inteligente de recursos. Protocolo Veredas, Plataforma Veras y HydroApp.">
-<meta name="keywords" content="casos de éxito, Galeleo, Protocolo Veredas, Plataforma Veras, HydroApp, salud digital, IA en salud, gestión inteligente, innovación tecnológica, proyectos de tecnología">
+<meta name="description" content="Casos de éxito de Galeleo: conozca proyectos innovadores en salud digital, bienestar mental con IA y gestión inteligente de recursos. Protocolo Veredas, Plataforma Veras y HidroApp.">
+<meta name="keywords" content="casos de éxito, Galeleo, Protocolo Veredas, Plataforma Veras, HidroApp, salud digital, IA en salud, gestión inteligente, innovación tecnológica, proyectos de tecnología">
 <meta property="og:title" content="Blog - Casos de Éxito | Galeleo">
 <meta property="og:description" content="Conozca los proyectos innovadores de Galeleo en salud digital, bienestar mental con IA y gestión inteligente de recursos.">
 <meta property="og:locale" content="es_ES">
@@ -154,12 +154,12 @@
                 </article>
             </div>
 
-            <!-- HydroApp Post -->
+            <!-- HidroApp Post -->
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <article class="blog-post-card h-100">
                     <div class="post-image">
                         <img src="{{ url_for('static', filename='images/img_sessao_4_3.jpg') }}" 
-                             alt="HydroApp System" class="img-fluid">
+                             alt="HidroApp System" class="img-fluid">
                         <div class="post-category utilities">
                             {{ content.blog.hydroapp.category if content.blog else 'Utilities' }}
                         </div>
@@ -176,7 +176,7 @@
                             </span>
                         </div>
                         <h3 class="post-title">
-                            {{ content.blog.hydroapp.title if content.blog else 'HydroApp: Gestão Inteligente de Recursos Hídricos' }}
+                            {{ content.blog.hydroapp.title if content.blog else 'HidroApp: Gestão Inteligente de Recursos Hídricos' }}
                         </h3>
                         <p class="post-excerpt">
                             {{ content.blog.hydroapp.excerpt if content.blog else 'Sistema revolucionário que combina IoT e IA para automatizar a gestão de água e gás em condomínios, oferecendo monitoramento em tempo real e economia significativa.' }}
@@ -186,7 +186,7 @@
                             <span class="tag">Smart Cities</span>
                             <span class="tag">Automação</span>
                         </div>
-                        <a href="{{ url_for('case_study', case_name='hydroapp', lang=lang) }}" class="btn btn-primary">
+                        <a href="https://hidroapp.com.br" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             {{ content.blog.read_more if content.blog else 'Ler Mais' }}
                             <i class="fas fa-arrow-right ms-1"></i>
                         </a>

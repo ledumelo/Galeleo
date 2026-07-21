@@ -47,7 +47,7 @@ Uma landing page multilíngue (Português, Inglês, Espanhol) para a empresa de 
 │   ├── blog.html         # Lista de casos
 │   ├── case_veredas.html # Caso Protocolo Veredas
 │   ├── case_veras.html   # Caso Plataforma Veras
-│   ├── case_hydroapp.html# Caso HydroApp
+│   ├── case_hydroapp.html# Caso HidroApp
 │   └── contact.html      # Formulário de contato
 └── README.md             # Este arquivo
 ```
@@ -77,7 +77,7 @@ Uma landing page multilíngue (Português, Inglês, Espanhol) para a empresa de 
    - Suporte emocional 24/7
    - IA terapêutica
    
-3. **HydroApp** (`/case/hydroapp`)
+3. **HidroApp** (`/case/hydroapp`)
    - Gestão inteligente de água/gás
    - IoT e leituras fotométricas
    - Sustentabilidade ambiental
@@ -167,7 +167,7 @@ gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 **Projetos Destacados**:
 - Protocolo Veredas (Saúde neurológica)
 - Plataforma Veras (Bem-estar mental)
-- HydroApp (Gestão sustentável)
+- HidroApp (Gestão sustentável)
 
 ## 📝 Licença
 

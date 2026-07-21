@@ -12,20 +12,26 @@
 <link rel="alternate" hreflang="x-default" href="https://galeleo.com.br/case/analogica">
 {% if lang == 'en' %}
 <meta name="description" content="How Galeleo built Analógica — an emergency QR Code bracelet that gives first responders instant access to vital medical data and notifies your family via WhatsApp. No app. No internet.">
+<meta name="keywords" content="Analógica, emergency bracelet, QR Code bracelet, emergency response, medical alert, WhatsApp notification, offline medical data, Galeleo, safety technology, first responder, geolocation emergency">
 <meta property="og:title" content="Analógica: The Emergency Bracelet That Saves Lives — Galeleo">
 <meta property="og:description" content="A QR Code bracelet that gives any first responder instant access to vital medical data — offline, no app needed. Family notified via WhatsApp in real time.">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:title" content="Analógica: The Emergency Bracelet That Saves Lives — Galeleo">
 <meta name="twitter:description" content="QR Code emergency bracelet with offline access, WhatsApp alerts, and complete medical profile. Developed by Galeleo.">
 {% elif lang == 'es' %}
 <meta name="description" content="Cómo Galeleo desarrolló Analógica — una pulsera de emergencia con QR Code que da a los socorristas acceso inmediato a datos médicos vitales y notifica a la familia vía WhatsApp. Sin app. Sin internet.">
+<meta name="keywords" content="Analógica, pulsera de emergencia, QR Code pulsera, respuesta a emergencias, alerta médica, notificación WhatsApp, datos médicos offline, Galeleo, tecnología de seguridad, socorrista, geolocalización emergencia">
 <meta property="og:title" content="Analógica: La Pulsera de Emergencia que Salva Vidas — Galeleo">
 <meta property="og:description" content="Una pulsera con QR Code que da a cualquier socorrista acceso instantáneo a datos médicos vitales — offline, sin app. Familia notificada vía WhatsApp en tiempo real.">
+<meta property="og:locale" content="es_ES">
 <meta name="twitter:title" content="Analógica: La Pulsera de Emergencia que Salva Vidas — Galeleo">
 <meta name="twitter:description" content="Pulsera de emergencia con QR Code, acceso offline, alertas WhatsApp y perfil médico completo. Desarrollado por Galeleo.">
 {% else %}
 <meta name="description" content="Como a Galeleo desenvolveu a Analógica — pulseira de emergência com QR Code que dá acesso imediato a dados médicos vitais e notifica a família via WhatsApp. Sem app. Sem internet.">
+<meta name="keywords" content="Analógica, pulseira de emergência, QR Code pulseira, atendimento de emergência, alerta médico, notificação WhatsApp, dados médicos offline, Galeleo, tecnologia de segurança, socorrista, geolocalização emergência">
 <meta property="og:title" content="Analógica: A Pulseira de Emergência que Já Salvou Vidas — Galeleo">
 <meta property="og:description" content="Uma pulseira com QR Code que dá a qualquer socorrista acesso instantâneo a dados médicos vitais — offline, sem app. Família notificada via WhatsApp em tempo real.">
+<meta property="og:locale" content="pt_BR">
 <meta name="twitter:title" content="Analógica: A Pulseira de Emergência que Já Salvou Vidas — Galeleo">
 <meta name="twitter:description" content="Pulseira de emergência com QR Code, acesso offline, alertas via WhatsApp e dossiê médico completo. Desenvolvido pela Galeleo.">
 {% endif %}
@@ -33,16 +39,16 @@
 <meta property="og:url" content="{{ request.url }}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Galeleo">
-<meta property="og:image" content="{{ request.url_root }}static/images/img_dashboard.jpg">
+<meta property="og:image" content="{{ request.url_root }}static/images/img_analogica.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ request.url_root }}static/images/img_dashboard.jpg">
+<meta name="twitter:image" content="{{ request.url_root }}static/images/img_analogica.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Analógica - Pulseira de Emergência com QR Code",
   "url": "{{ request.url }}",
-  "image": "{{ request.url_root }}static/images/img_dashboard.jpg",
+  "image": "{{ request.url_root }}static/images/img_analogica.png",
   "author": {"@type": "Organization", "name": "Galeleo"},
   "publisher": {"@type": "Organization", "name": "Galeleo", "logo": {"@type": "ImageObject", "url": "{{ request.url_root }}static/images/galeleo-logo.png"}},
   "datePublished": "2026-01-01",
